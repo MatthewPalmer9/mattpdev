@@ -4,7 +4,7 @@ export default class Index extends PureComponent {
     render() {
         return (
             <div>
-                Hello from Index
+                Hello from Index!!
             </div>
         )
     }

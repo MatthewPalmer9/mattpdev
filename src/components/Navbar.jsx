@@ -22,6 +22,13 @@ const Brand = styled.span`
     text-shadow: 0 0 5px aqua;
 `;
 
+const toggleMenu = () => {
+    const activeElements = document.querySelectorAll(".active-element");
+    for(let i = 0; i < activeElements.length; i++) {
+        activeElements[i].classList.toggle("active");
+    }
+}
+
 export default class Navbar extends PureComponent {
     render() {
         return (
@@ -34,10 +41,10 @@ export default class Navbar extends PureComponent {
                             </div>
                         </Brand>
 
-                        <div className="menu">
-                                <div className="one"></div>
-                                <div className="two"></div>
-                                <div className="three"></div>
+                        <div onClick={toggleMenu} className="menu" id="menu">
+                                <div className="one active-element"></div>
+                                <div className="two active-element"></div>
+                                <div className="three active-element"></div>
                         </div>
                     </div>
 

@@ -22,9 +22,24 @@ body {
   cursor: pointer;
 }
       .one, .two, .three {
+        transition: 300ms;
         width: 50px;
-        height: 5px;
-        margin-bottom: 7px;
+        height: 6px;
+        margin-bottom: 8px;
         background-color: aqua;
         border-radius: 20px;
       }
+
+.one.active {
+  transform: translate(0, 14px) rotate(45deg);
+}
+
+.two.active {
+  background-color: transparent;
+  transform: translateX(-55px);
+}
+
+.three.active {
+  transform: translate(0, -14px) rotate(-45deg);
+}
+
