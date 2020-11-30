@@ -3,9 +3,11 @@ import styled from 'styled-components';
 
 const Nav = styled.div`
     display: flex;
+    width: 100%;
+    position: fixed;
     z-index: 1000;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid white;
+    background-color: rgba(21, 31, 21, 0.4);
     height: 60px;
 `;
 
