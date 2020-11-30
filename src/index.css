@@ -55,7 +55,7 @@ body {
 }
 
 .menu-container {
-  display: flex;
+  display: none;
   position: fixed;
   z-index: 900;
   top: -100%;
@@ -68,6 +68,7 @@ body {
 }
 
 .menu-container.active {
+  display: flex;
   top: 60px;
 }
 
