@@ -6,3 +6,25 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.menu {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  right: 50px;
+}
+
+.menu:hover{
+  cursor: pointer;
+}
+      .one, .two, .three {
+        width: 50px;
+        height: 5px;
+        margin-bottom: 7px;
+        background-color: aqua;
+        border-radius: 20px;
+      }
