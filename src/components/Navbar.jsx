@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const Nav = styled.div`
     display: flex;
+    z-index: 1000;
     position: relative;
     background-color: rgba(0, 0, 0, 0.9);
     height: 60px;
@@ -18,7 +19,6 @@ const Brand = styled.span`
     justify-content: center;
     align-items: center;
     color: aqua;
-
     text-shadow: 0 0 5px aqua;
 `;
 
@@ -27,7 +27,11 @@ const toggleMenu = () => {
     for(let i = 0; i < activeElements.length; i++) {
         activeElements[i].classList.toggle("active");
     }
+
+    const dropMenu = document.querySelector(".menu-container");
+    dropMenu.classList.toggle("active");
 }
+
 
 export default class Navbar extends PureComponent {
     render() {
@@ -47,9 +51,17 @@ export default class Navbar extends PureComponent {
                                 <div className="three active-element"></div>
                         </div>
                     </div>
-
-
                 </Nav>
+
+                <div className="menu-container">
+                    <ul>
+                        <a href="/"><li className="navlink">Home</li></a>
+                        <a href="/"><li className="navlink">About</li></a>
+                        <a href="/"><li className="navlink">Projects</li></a>
+                        <a href="/"><li className="navlink">Blog</li></a>
+                        <a href="/"><li className="navlink">GitHub</li></a>
+                    </ul>
+                </div>
             </>
         )
     }

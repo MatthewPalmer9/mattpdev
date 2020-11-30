@@ -14,8 +14,9 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 0px;
+  top: 3px;
   right: 50px;
+  z-index: 1000;
 }
 
 .menu:hover{
@@ -28,6 +29,7 @@ body {
         margin-bottom: 8px;
         background-color: aqua;
         border-radius: 20px;
+        box-shadow: 0 0 5px aqua;
       }
 
 .one.active {
@@ -36,10 +38,51 @@ body {
 
 .two.active {
   background-color: transparent;
+  box-shadow: none;
   transform: translateX(-55px);
 }
 
 .three.active {
   transform: translate(0, -14px) rotate(-45deg);
+}
+
+.menu-container {
+  display: flex;
+  position: absolute;
+  z-index: 900;
+  top: -100%;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  transition: 300ms;
+  color: red;
+  box-shadow: inset 0 0 15px aqua;
+}
+
+.menu-container.active {
+  top: 60px;
+}
+
+.menu-container ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 150px;
+  height: 200px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-container ul a {
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.navlink {
+  color: #ececec;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 0 0 5px #ececec;
 }
 
