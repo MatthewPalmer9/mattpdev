@@ -8,12 +8,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#header-container {
+#header {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./stars-bg.jpg') center center no-repeat;
   background-size: cover;
   width: 100vw;
   height: 100vh;
 }
+
+.header-container {
+  display: flex;
+  position: relative;
+  top: 100px;
+  margin: 0 auto;
+  width: 80vw;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+
+
 
 .menu {
   display: flex;
@@ -33,7 +46,7 @@ body {
       .one, .two, .three {
         transition: 300ms;
         width: 50px;
-        height: 6px;
+        height: 4px;
         margin-bottom: 8px;
         background-color: aqua;
         border-radius: 20px;
@@ -51,16 +64,16 @@ body {
 }
 
 .three.active {
-  transform: translate(0, -14px) rotate(-45deg);
+  transform: translate(0, -10px) rotate(-45deg);
 }
 
 .menu-container {
-  display: none;
+  display: flex;
   position: fixed;
   z-index: 900;
   top: -100%;
   background-color: black;
-  height: 100vh;
+  height: 450px;
   width: 100vw;
   transition: 300ms;
   color: red;
@@ -76,7 +89,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 150px;
+  margin-top: 120px;
   height: 200px;
   justify-content: space-around;
   align-items: center;
@@ -93,6 +106,12 @@ body {
   font-weight: bold;
   font-size: 20px;
   text-shadow: 0 0 5px #ececec;
+}
+
+#spacer {
+  color: white;
+  text-shadow: 0 0 5px #ececec;
+  font-size: 28px;
 }
 
 

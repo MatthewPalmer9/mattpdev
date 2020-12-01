@@ -8,7 +8,7 @@ const Nav = styled.div`
     z-index: 1000;
     border-bottom: 1px solid white;
     background-color: rgba(21, 31, 21, 0.4);
-    height: 60px;
+    height: 55px;
 `;
 
 const Brand = styled.span`
@@ -43,7 +43,7 @@ export default class Navbar extends PureComponent {
                     <div className="navbar">
                         <Brand>
                             <div className="brand">
-                                    <span>MattPDev</span>
+                                    <span>MRP <span id="spacer">|</span> T</span>
                             </div>
                         </Brand>
 
