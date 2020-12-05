@@ -30,8 +30,12 @@ const toggleMenu = () => {
         activeElements[i].classList.toggle("active");
     }
 
+    // Checks if the display is set to "none" or "flex"
     const dropMenu = document.querySelector(".menu-container");
-    dropMenu.classList.toggle("active");
+    dropMenu.style.display === "flex" ? dropMenu.style.display = "none" : dropMenu.style.display = "flex";
+
+    // Seemlessly waits for the display to change to "flex" before executing drop-down animation
+    setTimeout(() => { dropMenu.classList.toggle("active") }, 10);
 }
 
 
@@ -43,7 +47,7 @@ export default class Navbar extends PureComponent {
                     <div className="navbar">
                         <Brand>
                             <div className="brand">
-                                    <span>MRP <span id="spacer">|</span> T</span>
+                                    <span>MRP <span className="spacer">|</span> T</span>
                             </div>
                         </Brand>
 
