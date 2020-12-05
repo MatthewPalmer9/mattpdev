@@ -1,3 +1,12 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background-color: black;
@@ -6,6 +15,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#contact {
+  background-color: #cecece;
+  height: 100vh;
 }
 
 #header {
@@ -18,25 +32,63 @@ body {
 
 .header-content {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-evenly;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 120px;
   width: 90%;
   height: 400px;
   /* background-color: rgba(0, 0, 0, 0.4); */
   border-radius: 20px;
 }
 
+.header-content-left {
+  display: flex;
+  flex-direction: column;
+  /* align-items: left; */
+}
+    .header-content-left h1 {
+      margin: 0;
+    }
+
+    .header-content-left p {
+      display: flex;
+      margin: .5rem 0;
+      text-transform: uppercase;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
 .header-content-right {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
   color: white;
   position: relative;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 500px;
   height: 200px;
   background-color: rgba(0, 0, 0, 0.4);
 }
+    .header-content-right p {
+      font-size: 1.25rem;
+      text-align: center;
+    }
+
+    .header-content-right button {
+      margin: 0 auto;
+      cursor: pointer;
+      background-color: transparent;
+      border: 1px solid aqua;
+      border-radius: 10px;
+      color: white;
+      padding: 10px;
+      font-size: 1.1rem;
+      width: 300px;
+    }
 
 
 .menu {
@@ -130,7 +182,15 @@ body {
   font-size: 3rem;
 }
 
-/* tests */
-#section1 {
-  height: 100vh;
+.title span {
+  font-size: 3rem;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 750px) {
+  .header-content, .header-content-left, .header-content-right {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
