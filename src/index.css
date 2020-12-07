@@ -3,6 +3,25 @@
   font-family: 'Alegreya Sans', sans-serif;
 }
 
+#about {
+  height: 100vh;
+}
+
+#about h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  padding-top: 80px;
+}
+
+#about .hr {
+  margin: 0 auto;
+  width: 300px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -17,9 +36,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.clip-path-left {
+.clip-header-path {
   display: flex;
-  height: 100px;
+  height: 200px;
   width: 100%;
   margin-top: -1px;
   clip-path: polygon(0 0, 100% 100%, 100% 0);
@@ -27,15 +46,27 @@ body {
   background-color: #0f1314;
 }
 
+.clip-about-path {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  margin-top: -1px;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  background-color: #0f1314;
+}
+
 #contact {
-  background-color: #cecece;
-  height: 100vh;
+  background-color: #0f1314;
+  height: 110vh;
 }
 
 #contact h1 {
   display: flex;
+  color: white;
+  text-shadow: 0 0 5px white;
   justify-content: center;
   margin-bottom: 5px;
+  margin-top: 0px;
   padding-top: 80px;
 }
 
@@ -43,7 +74,8 @@ body {
   margin: 0 auto;
   width: 300px;
   height: 1px;
-  background-color: rgba(50, 50, 50, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 5px white;
 }
 
 .contact-form-container {
@@ -57,6 +89,8 @@ body {
 
 .contact-form-container label {
   display: flex;
+  color: white;
+  text-shadow: 0 0 5px white;
   font-size: 24px;
 }
     #fn-label { margin-right: 9px }
@@ -73,7 +107,7 @@ body {
   transition: 350ms;
 }
     .contact-form-container input:focus {
-      box-shadow: 0px 0px 0px 3px rgba(62,152,255,0.5);
+      box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.5);
     }
 
 .contact-form-container textarea {
@@ -105,6 +139,7 @@ body {
 }
     #errorMsg ul {
       display: flex;
+      color: white;
       margin-top: 5px;
       flex-direction: column;
       font-size: 18px;
@@ -311,8 +346,8 @@ h1.title span {
 #submit-btn {
   margin: 10px auto 0 auto;
   outline: none;
-  background-color: skyblue;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  border: 1px solid rgba(0, 255, 255, 0.4);
   border-radius: 5px;
   padding: 10px 50px;
   transition: 300ms;
@@ -322,7 +357,8 @@ h1.title span {
 }
     #submit-btn:hover {
       cursor: pointer;
-      box-shadow: 0px 0px 0px 3px rgba(62, 152, 255, 0.5);
+      background-color: rgba(0, 255, 255, 0.4);
+      box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.8);
     }
 
 /* MEDIA QUERIES */
