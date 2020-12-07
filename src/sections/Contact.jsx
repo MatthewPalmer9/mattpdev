@@ -36,32 +36,28 @@ export default class Contact extends Component {
             let errMSG = document.createElement('li');
             errMSG.innerText = "Please include your first name.";
             errUL.appendChild(errMSG);
-            return
         } 
         if(this.state.lastName === null || this.state.lastName === "") { 
             errors.style.display = "flex";
             let errMSG = document.createElement('li');
             errMSG.innerText = "Please include your last name.";
             errUL.appendChild(errMSG);
-            return
         } 
         if(this.state.email === null || this.state.email === "") { 
             errors.style.display = "flex";
             let errMSG = document.createElement('li');
             errMSG.innerText = "Please include your email.";
             errUL.appendChild(errMSG);
-            return
         } 
         if(this.state.message === null || this.state.message === "") { 
             errors.style.display = "flex";
             let errMSG = document.createElement('li');
             errMSG.innerText = "Please include a message.";
             errUL.appendChild(errMSG);
-            return
         }
-
-
         errors.appendChild(errUL);
+
+        if(this.state.firstName === null || this.state.lastName === null || this.state.email === null || this.state.message === null) return;
     }
 
     render() {
