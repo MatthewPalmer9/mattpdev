@@ -19,7 +19,6 @@ export default class Index extends PureComponent {
                             <p>Want to work with me? I'm always looking for a new coding buddy and new challenges. Don't be shy, get in touch!</p>
                             <a href="#contact"><button>Get in Touch</button></a>
                         </div>
-
                     </div>
                 </div>
                 <div className="clip-path-left"></div>

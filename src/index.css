@@ -18,9 +18,12 @@ body {
 }
 
 .clip-path-left {
+  display: flex;
   height: 100px;
   width: 100%;
-  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  margin-top: -1px;
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  left: -1px;
   background-color: #0f1314;
 }
 
