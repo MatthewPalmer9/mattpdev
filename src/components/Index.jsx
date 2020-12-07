@@ -22,7 +22,9 @@ export default class Index extends PureComponent {
 
                     </div>
                 </div>
+                <div className="clip-path-left"></div>
                 <div id="contact">
+                    
 
                 </div>
             </>

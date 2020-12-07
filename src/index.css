@@ -9,12 +9,19 @@ html {
 
 body {
   margin: 0;
-  background-color: black;
+  background-color: #cecece;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.clip-path-left {
+  height: 100px;
+  width: 100%;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  background-color: #0f1314;
 }
 
 #contact {
