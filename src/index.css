@@ -54,6 +54,7 @@ h1.title {
 .header-content-left {
   display: flex;
   flex-direction: column;
+  margin-right: 5px;
   /* align-items: left; */
 }
     .header-content-left h1 {
@@ -62,7 +63,7 @@ h1.title {
 
     .header-content-left p {
       display: flex;
-      margin: .5rem 0;
+      margin: .5rem 0 .8rem 0;
       text-transform: uppercase;
       color: white;
       font-size: 2rem;
@@ -74,7 +75,7 @@ h1.title {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding: 20px;
+  padding: 1.5em;
   color: white;
   position: relative;
   border-radius: 10px;
@@ -84,7 +85,13 @@ h1.title {
 }
     .header-content-right p {
       font-size: 1.25rem;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
       text-align: center;
+    }
+
+    .header-content-right a {
+      margin-bottom: 1em;
     }
 
     .header-content-right button {
@@ -97,7 +104,11 @@ h1.title {
       padding: 10px;
       font-size: 1.1rem;
       width: 300px;
+      transition: 600ms;
     }
+        .header-content-right button:hover {
+          background-color: rgba(0, 255, 255, 0.4);
+        }
 
 
 .menu {
@@ -117,8 +128,8 @@ h1.title {
 }
       .one, .two, .three {
         transition: 300ms;
-        width: 50px;
-        height: 4px;
+        width: 45px;
+        height: 3px;
         margin-bottom: 8px;
         background-color: aqua;
         border-radius: 20px;
@@ -136,7 +147,7 @@ h1.title {
 }
 
 .three.active {
-  transform: translate(0, -10px) rotate(-45deg);
+  transform: translate(0, -8px) rotate(-45deg);
 }
 
 .menu-container {
@@ -188,7 +199,7 @@ h1.title {
 .title-spacer {
   color: white;
   text-shadow: 0 0 5px #ececec;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h1.title span {
