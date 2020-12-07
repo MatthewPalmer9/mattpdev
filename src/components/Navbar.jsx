@@ -32,7 +32,7 @@ const toggleMenu = () => {
 
     // Checks if the display is set to "none" or "flex"
     const dropMenu = document.querySelector(".menu-container");
-    dropMenu.style.display === "flex" ? dropMenu.style.display = "none" : dropMenu.style.display = "flex";
+    dropMenu.style.display === "flex" ? setTimeout(() => {dropMenu.style.display = "none"}, 300) : dropMenu.style.display = "flex";
 
     // Seemlessly waits for the display to change to "flex" before executing drop-down animation
     setTimeout(() => { dropMenu.classList.toggle("active") }, 10);
