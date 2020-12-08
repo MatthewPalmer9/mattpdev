@@ -57,7 +57,7 @@ body {
 
 #contact {
   background-color: #0f1314;
-  height: 110vh;
+  height: 800px;
 }
 
 #contact h1 {
@@ -384,6 +384,6 @@ h1.title span {
   }
 
   .header-content-right {
-    width: 100%;
+    width: 380px;
   }
 }
