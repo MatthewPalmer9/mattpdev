@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import Header from '../sections/Header.jsx';
 import About from '../sections/About.jsx';
 import Contact from '../sections/Contact.jsx';
+import Footer from '../sections/Footer.jsx';
 
 
 export default class Index extends PureComponent {
@@ -13,7 +14,7 @@ export default class Index extends PureComponent {
                 <About />
                 <div className="clip-about-path"></div>
                 <Contact />
-                <div className="clip-header-path"></div>
+                <Footer />
 
             </>
         )

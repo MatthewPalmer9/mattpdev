@@ -102,6 +102,28 @@ body {
   background-color: #0f1314;
 }
 
+.connect-with-me {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100vw;
+  height: 50px;
+}
+    .connect-with-me h2 {
+      margin: 0;
+      color: white;
+      width: 100vw;
+      text-align: center;
+      text-shadow: 0 0 5px white;
+    }
+
+    .connect-with-me p {
+      color: white;
+      text-shadow: 0 0 2px white;
+      text-align: center;
+      margin-top: 0;
+    }
+
 #contact {
   background-color: #0f1314;
   height: 800px;
@@ -194,6 +216,19 @@ body {
       align-items: center;
       float: left;
       width: 100%;
+    }
+
+#footer {
+  display: flex;
+  width: 100vw;
+  height: 60px;
+}
+
+    #footer span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
     }
 
 .textarea-container label {
@@ -383,6 +418,37 @@ h1.title {
   font-size: 20px;
   text-shadow: 0 0 5px #ececec;
 }
+
+#socials {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+    #socials a {
+      text-decoration: none;
+      border-radius: 50%;
+      border: 5px solid white;
+      text-align: center;
+      height: 45px;
+      width: 45px;
+      margin: 0 5px 0 5px;
+      background-color: white;
+      text-shadow: 0 0 80px white;
+    }
+    #socials .fa-linkedin {
+      color: royalblue;
+    }
+    #socials .fa-dev {
+      color: black;
+    }
+    #socials .fa-github {
+      color: purple;
+    }
+    #socials .fa-twitter {
+      color: cornflowerblue;
+    }
 
 .spacer {
   color: white;

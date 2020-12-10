@@ -88,6 +88,17 @@ export default class Contact extends Component {
                         <button onClick={this.handleSubmit} type="submit" id="submit-btn">Submit</button>
                     </div>
                 </div>
+
+                <div className="connect-with-me">
+                    <h2>Connect with me</h2>
+                    <p>I love to share my passion anywhere I can!</p>
+                    <div id="socials">
+                        <a href="https://linkedin.com/in/matthewpalmer9"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://dev.to/matthewpalmer9"><i class="fab fa-dev"></i></a>
+                        <a href="https://github.com/matthewpalmer9"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/mattpdev"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
                 
             </div>
         )
