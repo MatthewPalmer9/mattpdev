@@ -84,6 +84,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.brand a {
+  text-decoration: none;
+  color: aqua;
+}
+
 .clip-header-path {
   display: flex;
   height: 200px;

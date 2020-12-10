@@ -21,6 +21,7 @@ export default class Contact extends Component {
 
     handleSubmit = e => {
         e.preventDefault();
+        let button = document.querySelector("#submit-btn");
         let errors = document.querySelector('#errorMsg');
         errors.style.display = "none";
         let ulList = document.querySelector("#errorMsg ul");
@@ -59,7 +60,23 @@ export default class Contact extends Component {
         errors.appendChild(errUL);
 
         if(this.state.firstName === null || this.state.lastName === null || this.state.email === null || this.state.message === null) return;
-        this.sendEmail();
+
+        if(button.disabled === false) {
+            button.disabled = "true";
+            button.style.color = "black";
+            button.style.backgroundColor = "grey";
+            button.style.border = "1px solid white";
+            button.innerText = "Sent!";
+            this.sendEmail();
+
+            const values = document.querySelectorAll(".input-container input");
+            const message = document.querySelector(".textarea-container textarea");
+            values.forEach(input => input.value = "");
+            message.value = "";
+        } else {
+            console.log("Can't be clicked");
+        }
+
     }
 
     sendEmail = e => {
@@ -106,10 +123,10 @@ export default class Contact extends Component {
                     <h2>Connect with me</h2>
                     <p>I love to share my passion anywhere I can!</p>
                     <div id="socials">
-                        <a href="https://linkedin.com/in/matthewpalmer9"><i className="fab fa-linkedin"></i></a>
-                        <a href="https://dev.to/matthewpalmer9"><i className="fab fa-dev"></i></a>
-                        <a href="https://github.com/matthewpalmer9"><i className="fab fa-github"></i></a>
-                        <a href="https://twitter.com/mattpdev"><i className="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com/in/matthewpalmer9" rel="noreferrer noopener" target="_blank"><i className="fab fa-linkedin"></i></a>
+                        <a href="https://dev.to/matthewpalmer9" rel="noreferrer noopener"target="_blank"><i className="fab fa-dev"></i></a>
+                        <a href="https://github.com/matthewpalmer9" rel="noreferrer noopener" target="_blank"><i className="fab fa-github"></i></a>
+                        <a href="https://twitter.com/mattpdev" rel="noreferrer noopener" target="_blank"><i className="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 

@@ -16,7 +16,7 @@ export default class Header extends PureComponent {
 
                     <div className="header-content-right">
                         <p>Want to work with me? I'm always looking for a new coding buddy and new challenges. Don't be shy, get in touch!</p>
-                        <a href="#contact"><button>Get in Touch</button></a>
+                        <a href="#contact" rel="noopener"><button>Get in Touch</button></a>
                     </div>
                 </div>
             </div>
