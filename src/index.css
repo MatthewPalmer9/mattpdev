@@ -202,10 +202,19 @@ h1.title {
       font-weight: bold;
     }
 
-    .header-content-left #header-quote {
+    .header-content-left #header-quote{
       display: flex;
       font-size: 1.1rem;
+      margin-top: 0;
       width: 440px;
+      text-transform: none;
+    }
+
+    .header-content-left #quote-credit {
+      display: flex;
+      font-size: 1.1rem;
+      text-transform: none;
+      margin-top: 0;
     }
 
 .header-content-right {
@@ -386,6 +395,10 @@ h1.title span {
   }
 
   .header-content-left p {
+    text-align: center;
+  }
+
+  .header-content-left #quote-credit {
     text-align: center;
   }
 
