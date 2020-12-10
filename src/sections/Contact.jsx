@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import emailjs from 'emailjs-com';
 
 export default class Contact extends Component {
 
@@ -58,6 +59,18 @@ export default class Contact extends Component {
         errors.appendChild(errUL);
 
         if(this.state.firstName === null || this.state.lastName === null || this.state.email === null || this.state.message === null) return;
+        this.sendEmail();
+    }
+
+    sendEmail = e => {
+        emailjs.init("user_PhaHB3scWG4p7Nv7oXhNL");
+        emailjs.send(
+            'outlook',
+            'template_hbRIh0S4',
+            this.state
+        )
+        .then(res => console.log(res))
+        .catch(err => console.log("The form was not submitted."))
     }
 
     render() {
