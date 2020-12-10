@@ -10,6 +10,7 @@ export default class Header extends PureComponent {
                                 <span>MRP</span><div className="title-spacer">&nbsp;|&nbsp;</div>TECHNOLOGIES
                         </h1>
                         <p>People work better together</p>
+                        <p id="header-quote"><em>"The power of one, if fearless and focused, is formidable. But the power of many working together is better."</em></p>
                     </div>
 
                     <div className="header-content-right">

@@ -4,7 +4,7 @@
 }
 
 #about {
-  height: 100vh;
+  height: 800px;
 }
 
 #about h1 {
@@ -168,7 +168,7 @@ h1.title {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./stars-bg.jpg') center center no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 650px;
 }
 
 .header-content {
@@ -195,11 +195,17 @@ h1.title {
 
     .header-content-left p {
       display: flex;
-      margin: .5rem 0 .8rem 0;
+      margin: .5rem 0 .4rem 0;
       text-transform: uppercase;
       color: white;
       font-size: 2rem;
       font-weight: bold;
+    }
+
+    .header-content-left #header-quote {
+      display: flex;
+      font-size: 1.1rem;
+      width: 440px;
     }
 
 .header-content-right {
