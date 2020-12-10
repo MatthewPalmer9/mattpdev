@@ -11,7 +11,7 @@ export default class About extends PureComponent {
                 <div className="about-content">
                     <div className="about-content-left">
                         <div id="selfImg">
-                            <img src={selfImg}/>
+                            <img alt="self-img" src={selfImg}/>
                         </div>
                     </div>
 
