@@ -398,6 +398,10 @@ h1.title span {
     align-items: center;
   }
 
+  .header-content-right {
+    display: none;
+  }
+
   .header-content-left p {
     text-align: center;
   }
