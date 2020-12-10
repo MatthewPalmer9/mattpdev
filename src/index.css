@@ -168,7 +168,7 @@ h1.title {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./stars-bg.jpg') center center no-repeat;
   background-size: cover;
   width: 100%;
-  height: 650px;
+  height: 100vh;
 }
 
 .header-content {
