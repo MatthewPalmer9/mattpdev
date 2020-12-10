@@ -4,7 +4,7 @@
 }
 
 #about {
-  height: 800px;
+  height: 850px;
 }
 
 #about h1 {
@@ -21,6 +21,54 @@
   height: 1px;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+  padding: 0 50px 0 50px;
+}
+
+.about-content-left {
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+}
+
+.about-content-right {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50vw;
+}
+    .about-content-right h1 {
+      display: inline-block;
+      margin: 0 auto;
+      padding-top: 30px !important;
+    }
+
+    .about-content-right p {
+      font-size: 1.1em;
+    }
+
+    .about-content-right p:nth-last-of-type(3), p:nth-last-of-type(2) {
+      margin-bottom: 0!important;
+    }
+
+div#selfImg {
+  display: flex;
+}
+    div#selfImg img {
+      display: flex;
+      margin: 50px auto 0 0;
+      border-radius: 55%;
+      height: 400px; 
+      width: 400px;
+      border: 1px solid white;
+      box-shadow: 0 0 50px -15px black;
+    }
+
 
 html {
   scroll-behavior: smooth;
@@ -42,7 +90,6 @@ body {
   width: 100%;
   margin-top: -1px;
   clip-path: polygon(0 0, 100% 100%, 100% 0);
-  left: -1px;
   background-color: #0f1314;
 }
 
@@ -50,7 +97,7 @@ body {
   display: flex;
   height: 200px;
   width: 100%;
-  margin-top: -1px;
+  margin-bottom: -2px;
   clip-path: polygon(0 100%, 100% 0, 100% 100%);
   background-color: #0f1314;
 }
@@ -378,6 +425,20 @@ h1.title span {
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 750px) {
+
+  .about-content {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .about-content-right, .about-content-left {
+    width: 100vw;
+    padding: 0 20px 0 20px;
+  }
+
+  div#selfImg img {
+    height: 200px; width: 200px;
+  }
 
   h1.title {
     font-size: 2rem;
