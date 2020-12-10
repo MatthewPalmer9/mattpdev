@@ -106,10 +106,10 @@ export default class Contact extends Component {
                     <h2>Connect with me</h2>
                     <p>I love to share my passion anywhere I can!</p>
                     <div id="socials">
-                        <a href="https://linkedin.com/in/matthewpalmer9"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://dev.to/matthewpalmer9"><i class="fab fa-dev"></i></a>
-                        <a href="https://github.com/matthewpalmer9"><i class="fab fa-github"></i></a>
-                        <a href="https://twitter.com/mattpdev"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com/in/matthewpalmer9"><i className="fab fa-linkedin"></i></a>
+                        <a href="https://dev.to/matthewpalmer9"><i className="fab fa-dev"></i></a>
+                        <a href="https://github.com/matthewpalmer9"><i className="fab fa-github"></i></a>
+                        <a href="https://twitter.com/mattpdev"><i className="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 
