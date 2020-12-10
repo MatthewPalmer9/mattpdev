@@ -206,7 +206,7 @@ h1.title {
       display: flex;
       font-size: 1.1rem;
       margin-top: 0;
-      width: 440px;
+      width: 100%;
       text-transform: none;
     }
 
