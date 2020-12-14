@@ -57,7 +57,7 @@ export default class Projects extends PureComponent {
 
                     <div className="project">
                         <a target="_blank" rel="noopener noreferrer" href="https://rgbcolorgame.vercel.app/">
-                            <img alt="weatherapp" src={rgbcolorgame} />
+                            <img alt="rgbcolorgame" src={rgbcolorgame} />
                         </a>
                         <div className="project-description">
                         <a target="_blank" rel="noopener noreferrer" href="https://rgbcolorgame.vercel.app/">
