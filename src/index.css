@@ -3,6 +3,10 @@
   font-family: 'Alegreya Sans', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 #about {
   height: 850px;
 }
@@ -454,6 +458,10 @@ h1.title {
   width: 402px;
   background-color: rgb(255, 255, 255);
 }
+    .project a {
+      color: black;
+    }
+
     .project img {
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
@@ -575,37 +583,37 @@ h1.title {
       margin-top: 5px;
     }
 
-    .fa-js-square {
+    .skillbox .fa-js-square {
       font-size: 48px;
       filter: drop-shadow(0 0 20px gold);
       color: gold;
     }
 
-    .fa-css3-alt {
+    .skillbox .fa-css3-alt {
       font-size: 48px;
       filter: drop-shadow(0 0 20px dodgerblue);
       color: dodgerblue;
     }
 
-    .fa-html5 {
+    .skillbox .fa-html5 {
       font-size: 48px;
       filter: drop-shadow(0 0 20px chocolate);
       color: chocolate;
     }
 
-    .fa-gem {
+    .skillbox .fa-gem {
       font-size: 48px;
       filter: drop-shadow(0 0 20px crimson);
       color: crimson;
     }
 
-    .fa-github {
+    .skillbox .fa-github {
       font-size: 48px;
       filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.5));
       color: white;
     }
 
-    .fa-react {
+    .skillbox .fa-react {
       font-size: 48px;
       filter: drop-shadow(0 0 20px turquoise);
       color: turquoise
