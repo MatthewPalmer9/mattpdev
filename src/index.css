@@ -89,7 +89,12 @@ body {
   color: aqua;
 }
 
-.clip-header-path {
+.clip-background {
+  height: 200px;
+  background-color: rgba(141, 0, 0, 0.6);
+}
+
+.clip-right-path {
   display: flex;
   height: 200px;
   width: 100%;
@@ -98,13 +103,22 @@ body {
   background-color: #0f1314;
 }
 
-.clip-about-path {
+.clip-left-path {
   display: flex;
   height: 200px;
   width: 100%;
-  margin-bottom: -2px;
+  margin-bottom: 0px;
   clip-path: polygon(0 100%, 100% 0, 100% 100%);
-  background-color: #0f1314;
+  background-color: rgba(141, 0, 0, 0.6);
+}
+
+.clip-left-reverse-path {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  margin-bottom: -1px;
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+  background-color: #cecece;
 }
 
 .connect-with-me {
@@ -131,7 +145,7 @@ body {
 
 #contact {
   background-color: #0f1314;
-  height: 800px;
+  height: 820px;
 }
 
 #contact h1 {
@@ -424,9 +438,197 @@ h1.title {
   text-shadow: 0 0 5px #ececec;
 }
 
+.projects-container {
+  display: grid;
+  justify-content: center;
+  grid-gap: 5%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project {
+  box-shadow: 0 0 40px -20px black;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: 0px;
+  height: 300px;
+  width: 402px;
+  background-color: rgb(255, 255, 255);
+}
+    .project img {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom: 1px solid grey;
+      max-width: 400px;
+      max-height: 300px;
+    }
+
+    p.description {
+      display: inline-block;
+      text-align: center;
+      margin: 0 10px;
+    }
+
+    .project-description h2 {
+      display: flex;
+      margin: 0;
+      justify-content: center;
+    }
+
+    .project div.hr {
+      width: 50% !important;
+      height: 1px !important;
+      margin: 10px auto 1px auto;
+    }
+
+    .project-description span.tech-list {
+      display: flex;
+      justify-content: center;
+    }
+
+    .project-description span.javascript {
+      color: black;
+      background-color: gold;
+      padding: 0 2px;
+    }
+
+    .project-description span.react {
+      color: turquoise;
+      background-color: black;
+      padding: 0 2px;
+    }
+
+    .project-description span.plain {
+      color: white;
+      background-color: black;
+      padding: 0 2px;
+    }
+
+    .project-description strong {
+      margin-right: 2px;
+    }
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 100vw;
+  height: 850px;
+  padding-top: 80px;
+}
+    #projects div.hr {
+      width: 200px;
+      margin-bottom: 10px;
+      height: 2px;
+      background-color: black;
+    }
+
+    #projects h1 {
+      margin-bottom: 0;
+    }
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 850px;
+  background-color: rgba(141, 0, 0, 0.6);
+  padding-top: 80px;
+}
+    #skills div.hr {
+      width: 200px;
+      height: 2px;
+      background-color: black;
+    }
+
+    #skills h1 {
+      margin-bottom: 0;
+    }
+
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  color: white;
+  margin: 50px 20px;
+  width: 90%;
+  height: 400px;
+  flex-direction: row;
+}
+
+    .skills-list i {
+      display: flex;
+      clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: 0 auto;
+      width: 75px;
+      height: 75px;
+    }
+
+    .skills-list span {
+      margin-top: 5px;
+    }
+
+    .fa-js-square {
+      font-size: 48px;
+      filter: drop-shadow(0 0 20px gold);
+      color: gold;
+    }
+
+    .fa-css3-alt {
+      font-size: 48px;
+      filter: drop-shadow(0 0 20px dodgerblue);
+      color: dodgerblue;
+    }
+
+    .fa-html5 {
+      font-size: 48px;
+      filter: drop-shadow(0 0 20px chocolate);
+      color: chocolate;
+    }
+
+    .fa-gem {
+      font-size: 48px;
+      filter: drop-shadow(0 0 20px crimson);
+      color: crimson;
+    }
+
+    .fa-github {
+      font-size: 48px;
+      filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.5));
+      color: white;
+    }
+
+    .fa-react {
+      font-size: 48px;
+      filter: drop-shadow(0 0 20px turquoise);
+      color: turquoise
+    }
+        #redux {
+          color: rgb(255, 142, 255);
+          text-shadow: 0 0 2px black;
+        }
+
+        #react-redux-splitter {
+          color: black;
+        }
+
+.skillbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 #socials {
   display: flex;
   font-size: 2rem;
+  margin-top: 10px;
   justify-content: center;
   align-items: center;
   color: white;
@@ -544,5 +746,14 @@ h1.title span {
 
   .header-content-right {
     width: 380px;
+  }
+
+  .projects-container {
+    grid-template-columns: none;
+    grid-template-rows: 1fr;
+  }
+
+  .skills-list {
+    width: 80vw;
   }
 }

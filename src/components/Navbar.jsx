@@ -65,7 +65,7 @@ export default class Navbar extends PureComponent {
                         <a onClick={toggleMenu} href="#about"><li className="navlink">About</li></a>
                         <a onClick={toggleMenu} href="#contact"><li className="navlink">Contact</li></a>
                         <a href="#header"><li className="navlink">Projects</li></a>
-                        <a href="https://dev.to/matthewpalmer9" rel="noreferrer noopener" target="_blank"><li className="navlink">Blog</li></a>
+                        <a onClick={toggleMenu} href="#skills" rel="noreferrer noopener"><li className="navlink">Skills</li></a>
                         <a href="https://github.com/matthewpalmer9" rel="noreferrer noopener" target="_blank"><li className="navlink">GitHub</li></a>
                     </ul>
                 </div>
