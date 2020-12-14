@@ -453,7 +453,7 @@ h1.title {
   border-top-right-radius: 20px;
   margin-top: 0px;
   height: 300px;
-  width: 402px;
+  width: 380px;
   background-color: rgb(255, 255, 255);
 }
     .project a {
@@ -475,6 +475,7 @@ h1.title {
     p.description {
       display: inline-block;
       text-align: center;
+      font-size: .9rem;
       margin: 0 10px;
     }
 
@@ -527,6 +528,10 @@ h1.title {
 
     .project-description strong {
       margin-right: 2px;
+    }
+
+    .project-description .tech-list {
+      font-size: .8rem;
     }
 
 #projects {
