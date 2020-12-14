@@ -10,11 +10,11 @@ export default class Projects extends PureComponent {
 
                 <div className="projects-container">
                     <div className="project">
-                        <a target="_blank" ref="noopener noreferrer" href="https://react-drag-drop-five.vercel.app/">
+                        <a target="_blank" rel="noopener noreferrer" href="https://react-drag-drop-five.vercel.app/">
                             <img alt="react-dragndrop" src={dragndrop} />
                         </a>
                         <div className="project-description">
-                        <a target="_blank" ref="noopener noreferrer" href="https://react-drag-drop-five.vercel.app/">
+                        <a target="_blank" rel="noopener noreferrer" href="https://react-drag-drop-five.vercel.app/">
                             <h2>React Drag N' Drop</h2>
                         </a>
                             <span className="tech-list">
