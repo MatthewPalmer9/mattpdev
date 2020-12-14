@@ -80,7 +80,7 @@ export default class Projects extends PureComponent {
 
                     <div className="project">
                         <a target="_blank" rel="noopener noreferrer" href="https://mrp-carousel.vercel.app/">
-                            <img alt="rgbcolorgame" src={JSSlider} />
+                            <img alt="jsslider" src={JSSlider} />
                         </a>
                         <div className="project-description">
                         <a target="_blank" rel="noopener noreferrer" href="https://mrp-carousel.vercel.app/">
