@@ -24,7 +24,7 @@ export default class Projects extends PureComponent {
                                 <span className="plain">HTML5 Drag n Drop API</span>
                             </span>
                         </div>
-                        <div className="hr"></div>
+                        <div className="hr"></div> 
                         <p className="description">
                             A UI/UX designed using the HTML5 "Drag n Drop API". <strong>Currently not mobile friendly due to this APIs capatability.</strong>
                         </p>
