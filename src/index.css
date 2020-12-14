@@ -550,6 +550,10 @@ h1.title {
       background-color: black;
     }
 
+    #projects div.hr:nth-of-type(1) {
+      margin-bottom: 50px;
+    }
+
     #projects h1 {
       margin-bottom: 0;
     }

@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import dragndropPic from '../project-imgs/react-dragndrop.png';
 import weatherappPic from '../project-imgs/mattpdev-wa.png';
 import rgbcolorgame from '../project-imgs/rgbcolorgame.png';
+import JSSlider from '../project-imgs/js-slider.png';
 
 export default class Projects extends PureComponent {
     render() {
@@ -61,7 +62,7 @@ export default class Projects extends PureComponent {
                         </a>
                         <div className="project-description">
                         <a target="_blank" rel="noopener noreferrer" href="https://rgbcolorgame.vercel.app/">
-                            <h2>RGB Color Game</h2>
+                            <h2>RGB Color Guessing Game</h2>
                         </a>
                             <span className="tech-list">
                                 <strong>Technologies: </strong>
@@ -74,6 +75,27 @@ export default class Projects extends PureComponent {
                         <div className="hr"></div> 
                         <p className="description">
                             "The Great RGB Color Guessing Game" originaly created by Colt Steele and remade using React.
+                        </p>
+                    </div>
+
+                    <div className="project">
+                        <a target="_blank" rel="noopener noreferrer" href="https://mrp-carousel.vercel.app/">
+                            <img alt="rgbcolorgame" src={JSSlider} />
+                        </a>
+                        <div className="project-description">
+                        <a target="_blank" rel="noopener noreferrer" href="https://mrp-carousel.vercel.app/">
+                            <h2>JS Slider</h2>
+                        </a>
+                            <span className="tech-list">
+                                <strong>Technologies: </strong>
+                                <span className="javascript">JavaScript</span>, 
+                                <span className="css">CSS</span>,
+                                <span className="html">HTML</span>,
+                            </span>
+                        </div>
+                        <div className="hr"></div> 
+                        <p className="description">
+                            An image slider built 100% in vanilla JavaScript, CSS and HTML. Eliminates the heavy footprint of using a framework or library.
                         </p>
                     </div>
                 </div>
