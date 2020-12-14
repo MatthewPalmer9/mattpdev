@@ -30,7 +30,7 @@ export default class Skills extends PureComponent {
 
                         <div className="skillbox">
                             <i className="fas fa-gem"></i>
-                            <span>Ruby / Ruby on Rails</span>
+                            <span>Ruby on Rails</span>
                         </div>
 
                         <div className="skillbox">
