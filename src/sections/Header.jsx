@@ -12,7 +12,7 @@ export default class Header extends PureComponent {
                         <div className="hr"></div>
                         <h3>
                             <em>Ruby on Rails Developer</em>
-                            <i class="fas fa-code"></i>
+                            <i className="fas fa-code"></i>
                         </h3>
 
                         <div className="left--content">
@@ -40,6 +40,26 @@ export default class Header extends PureComponent {
                         <div className="business--card">
                                 <h1>Contact Me</h1>
                                 <div className="hr"></div>
+                                <div className="contact--col">
+                                    <div className="contact--row">
+                                        <i className="fas fa-envelope"></i>
+                                        <p>E: matthewpalmer9@outlook.com</p>
+                                    </div>
+                                    <div className="contact--row">
+                                        <i className="fas fa-phone"></i>
+                                        <p>C: (512) 579-9802</p>
+                                    </div>
+                                    <div className="contact--row">
+                                        <i className="fas fa-map-marker-alt"></i>
+                                        <p>Location: Austin, TX</p>
+                                    </div>
+                                    <div className="connect--row">
+                                        <h2>Connect With Me</h2>
+                                        <div className="socials--list">
+                                            hello
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
                     </div>
                 </div>
