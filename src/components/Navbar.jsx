@@ -47,7 +47,7 @@ export default class Navbar extends PureComponent {
                     <div className="navbar">
                         <Brand>
                             <div className="brand">
-                                    <a href="#header" rel="noopener"><span>MRP <span className="spacer">|</span> T</span></a>
+                                    <a href="#header" rel="noopener"><span>MRP <span className="spacer">|</span> Experienced Developer</span></a>
                             </div>
                         </Brand>
 
