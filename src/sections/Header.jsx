@@ -20,16 +20,16 @@ export default class Header extends PureComponent {
                             <div className="technology--container">
                                 <span>Skills / Technologies</span>
                                 <div className="skills">
-                                    <i class="fab fa-js-square"></i>
-                                    <i class="fab fa-css3-alt"></i>
-                                    <i class="fab fa-html5"></i>
-                                    <i class="fab fa-react"></i>
+                                    <i className="fab fa-js-square"></i>
+                                    <i className="fab fa-css3-alt"></i>
+                                    <i className="fab fa-html5"></i>
+                                    <i className="fab fa-react"></i>
                                     <img id="redux" src="https://raw.githubusercontent.com/reduxjs/redux/b1f0e4c3beb745294b7c674e30693af0116c7fe8/logo/logo.svg" alt="redux"/>
-                                    <i class="fas fa-gem"></i>
+                                    <i className="fas fa-gem"></i>
                                     <div className="gh">
-                                        <i class="fab fa-github"></i>
+                                        <i className="fab fa-github"></i>
                                     </div>
-                                    <i class="fas fa-code-branch"></i>
+                                    <i className="fas fa-code-branch"></i>
                                     <img id="postresql" src="https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg" alt="postgres"/>
                                 </div>
                             </div>
