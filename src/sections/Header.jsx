@@ -1,66 +1,22 @@
-import React, { PureComponent } from 'react';
-import selfImg from '../matthewpalmer.jpg';
+import React, { PureComponent } from 'react'
 
 export default class Header extends PureComponent {
     render() {
         return (
             <div id="header">
-                <div className="header--content--container">
-
-                    <div className="header--content--left">
-                        <h1>Matthew Ryan Palmer</h1>
-                        <div className="hr"></div>
-                        <h3>
-                            <em>Ruby on Rails Developer</em>
-                            <i className="fas fa-code"></i>
-                        </h3>
-
-                        <div className="left--content">
-                            <img id="self" src={selfImg} alt="Matthew Ryan Palmer"/>
-                            <div className="technology--container">
-                                <span>Skills / Technologies</span>
-                                <div className="skills">
-                                    <i className="fab fa-js-square"></i>
-                                    <i className="fab fa-css3-alt"></i>
-                                    <i className="fab fa-html5"></i>
-                                    <i className="fab fa-react"></i>
-                                    <img id="redux" src="https://raw.githubusercontent.com/reduxjs/redux/b1f0e4c3beb745294b7c674e30693af0116c7fe8/logo/logo.svg" alt="redux"/>
-                                    <i className="fas fa-gem"></i>
-                                    <div className="gh">
-                                        <i className="fab fa-github"></i>
-                                    </div>
-                                    <i className="fas fa-code-branch"></i>
-                                    <img id="postresql" src="https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg" alt="postgres"/>
-                                </div>
-                            </div>
-                        </div>
+                <div className="header-content">
+                    <div className="header-content-left">
+                        <h1 className="title">
+                                <span>MRP</span><div className="title-spacer">&nbsp;|&nbsp;</div>TECHNOLOGIES
+                        </h1>
+                        <p>People work better together</p>
+                        <p id="header-quote"><em>"The power of one, if fearless and focused, is formidable, but the power of many working together is better."</em></p>
+                        <p id="quote-credit">- Gloria Macapagal Arroyo</p>
                     </div>
 
-                    <div className="header--content--right">
-                        <div className="business--card">
-                                <h1>Contact Me</h1>
-                                <div className="hr"></div>
-                                <div className="contact--col">
-                                    <div className="contact--row">
-                                        <i className="fas fa-envelope"></i>
-                                        <p>E: matthewpalmer9@outlook.com</p>
-                                    </div>
-                                    <div className="contact--row">
-                                        <i className="fas fa-phone"></i>
-                                        <p>C: (512) 579-9802</p>
-                                    </div>
-                                    <div className="contact--row">
-                                        <i className="fas fa-map-marker-alt"></i>
-                                        <p>Location: Austin, TX</p>
-                                    </div>
-                                    <div className="connect--row">
-                                        <h2>Connect With Me</h2>
-                                        <div className="socials--list">
-                                            hello
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
+                    <div className="header-content-right">
+                        <p>Want to work with me? I'm always looking for a new coding buddy and new challenges. Don't be shy, get in touch!</p>
+                        <a href="#contact" rel="noopener"><button>Get in Touch</button></a>
                     </div>
                 </div>
             </div>
