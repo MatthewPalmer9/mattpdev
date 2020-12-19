@@ -50,6 +50,11 @@ a {
       display: inline-block;
       margin: 0 auto;
       padding-top: 30px !important;
+      color: crimson;
+    }
+
+    .about-content-right h1 i {
+      margin: 0 10px;
     }
 
     .about-content-right p {
@@ -95,7 +100,7 @@ body {
 
 .clip-background {
   height: 200px;
-  background-color: indianred;
+  background-color: darkslateblue;
 }
 
 .clip-right-path {
@@ -113,7 +118,7 @@ body {
   width: 100%;
   margin-bottom: -1px;
   clip-path: polygon(0 100%, 100% 0, 100% 100%);
-  background-color: indianred;
+  background-color: darkslateblue;
 }
 
 .clip-left-reverse-path {
@@ -564,16 +569,22 @@ h1.title {
   align-items: center;
   width: 100vw;
   height: 850px;
-  background-color: indianred;
+  background-color: darkslateblue;
   padding-top: 80px;
 }
     #skills div.hr {
       width: 200px;
       height: 2px;
-      background-color: black;
+      background-color: white;
     }
 
     #skills h1 {
+      display: flex;
+      color: white;
+      text-shadow: 0 0 3px white;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
       margin-bottom: 0;
     }
 
@@ -582,7 +593,6 @@ h1.title {
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   color: white;
   margin: 50px 20px;
@@ -656,6 +666,12 @@ h1.title {
   justify-content: center;
   flex-direction: column;
 }
+
+.skillbox span {
+  color: white;
+  text-shadow: 0 0 3px white;
+}
+
 #socials {
   display: flex;
   font-size: 2rem;

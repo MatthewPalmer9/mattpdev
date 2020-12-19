@@ -16,10 +16,10 @@ export default class About extends PureComponent {
                     </div>
 
                     <div className="about-content-right">
-                        <h1>Front-end Website Developer</h1>
+                        <h1>Ruby on Rails Developer<i className="fas fa-laptop-code"></i></h1>
                         <p>Hi there!</p> 
-                        <p>My name is Matthew Ryan Palmer, and I'm a Front-end Website Developer living in the Austin, TX area.</p>
-                        <p>I started my journey from "The Web Developer Bootcamp" by Colt Steele on Udemy. Ever since, I've fallen in love with web development and went to school twice for it -- Once at Purdue University Global and again at Flatiron School. Since graduating, I've spent most of my free time taking my craft to the next level. Like many other people, I enjoy spending my free time increasing my knowledge of web development and building new and challenging projects.</p>
+                        <p>My name is Matthew Ryan Palmer, and I'm a Ruby on Rails Developer (Full Stack) living in the Austin, TX area.</p>
+                        <p>I specialize in Ruby on Rails and JavaScript-based programming. I am successful in working with Rails MVC architecture, database schema building, security/authentication through sessions, JWT Web Tokens and parameter validations. My interest with Ruby on Rails is due to its ability to maintain high security, clean code and a general environment fit for production/deployment. </p>
                     </div>
                 </div>
             </div>
