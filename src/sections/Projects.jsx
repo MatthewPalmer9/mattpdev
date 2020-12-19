@@ -20,7 +20,7 @@ export default class Projects extends PureComponent {
                         techs={["JavaScript", "CSS", "HTML", "React"]}
                         description={
                             <p className="description">
-                                A UI/UX designed using the HTML5 "Drag n Drop API". <strong>Currently not mobile friendly due to this APIs capatability.</strong>
+                                A UI/UX designed using the HTML5 "Drag n Drop API". <strong>Currently not mobile friendly due to this APIs compatibility.</strong>
                             </p>
                         }
                     />
