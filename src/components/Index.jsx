@@ -22,7 +22,7 @@ export default class Index extends PureComponent {
                 <Projects />
                 <Contact />
                 <Footer />
-
+                {console.log("%c If you can read this, you're awesome! ;)", "background: black; color: turquoise; padding: 20px 30px; font-size: 16px; text-shadow: 0 0 5px turquoise")}
             </>
         )
     }
