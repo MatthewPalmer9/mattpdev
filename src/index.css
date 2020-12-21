@@ -8,7 +8,7 @@ a {
 }
 
 #about {
-  height: 950px;
+  height: 850px;
 }
 
 #about h1 {
@@ -765,6 +765,10 @@ h1.title span {
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 750px) {
+
+  #about {
+    height: 950px;
+  }
 
   .about-content {
     flex-direction: column;
