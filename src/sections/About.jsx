@@ -25,9 +25,10 @@ export default class About extends PureComponent {
                             <h2>What am I currently learning?</h2>
                             <span>(Updated: Dec. 28, 2020)</span>
                             <div className="hr"></div>
-                            <p>Currently, I'm diving into <strong>Java!</strong> It's been in my sights for quite some time now,
-                            and I'm excited to learn why Java is in such high demand in the engineering world. I have an interest
-                            in working for a prestigious company. Stay tuned! I'm excited to share with you what I do with Java. 
+                            <p>Currently, I'm diving into <strong>Java!</strong> It has been in my sights for quite some time now,
+                            and I'm excited to learn why Java is in such high demand in the engineering world. So far, it's proving 
+                            to be quite an amazing learning experience. Stay tuned! I'm excited to share with you what I do with Java. 
+                            &nbsp;<strong>Follow me on <a href="https://github.com/matthewpalmer9" target="_blank" rel="noopener noreferrer">Github</a> and <a href="https://linkedin.com/in/matthewpalmer9" target="_blank" rel="noopener noreferrer">LinkedIn</a> to see how I'm doing!</strong>
                             </p>
                         </div>
                     </div>
