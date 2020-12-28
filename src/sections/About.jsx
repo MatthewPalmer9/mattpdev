@@ -23,13 +23,11 @@ export default class About extends PureComponent {
 
                         <div className="current-progress">
                             <h2>What am I currently learning?</h2>
-                            <span>(Updated: Dec. 21, 2020)</span>
+                            <span>(Updated: Dec. 28, 2020)</span>
                             <div className="hr"></div>
-                            <p>Currently, I'm diving into <strong>React Native!</strong> It's very important for us developers to
-                                maintain modern technical skills that accelerate the future. These days, people spend
-                                more time on their cell phones than they do an actual PC or laptop. React Native is
-                                the next step in my journey as it allows for building applications that communicate
-                                with both iOS and Android devices in one language!
+                            <p>Currently, I'm diving into <strong>Java!</strong> It's been in my sights for quite some time now,
+                            and I'm excited to learn why Java is in such high demand in the engineering world. I have an interest
+                            in working for a prestigious company. Stay tuned! I'm excited to share with you what I do with Java. 
                             </p>
                         </div>
                     </div>
