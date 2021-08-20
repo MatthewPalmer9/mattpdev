@@ -7,6 +7,10 @@ RUN npm install
 COPY . . 
 RUN npm run build
 
+FROM gcr.io/google.com/cloudsdktool/cloud-sdk:alpine
+RUN apk --update add openjdk7-jre
+RUN gcloud components install app-engine-java kubectl
+
 # Stage 1 - Serve Frontend Assests 
 FROM fholzer/nginx-brotli:v1.12.2
 
