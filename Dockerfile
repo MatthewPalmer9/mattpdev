@@ -9,8 +9,10 @@ RUN npm run build
 
 # Stage 1 - Serve Frontend Assests 
 FROM fholzer/nginx-brotli:v1.12.2
+
 WORKDIR /etc/nginx 
-ADD nginx.config /etc/nginx/nginx.conf
+ADD nginx.conf /etc/nginx/nginx.conf
+
 COPY --from=build /app/build /usr/share/nginx/html
 EXPOSE 443 
-CMD ["nginx", "-g", "demon off;"]
+CMD ["nginx", "-g", "daemon off;"]
