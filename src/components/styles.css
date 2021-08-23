@@ -258,6 +258,7 @@ html, body {
 .container #content1 h2 {
   margin: 5px auto;
   font-family: 'Regular';
+  font-size: 1.3em;
   color: white;
   border-bottom: 2px dotted white;
 }
@@ -404,6 +405,12 @@ html, body {
   }
   .container footer {
     border-bottom-right-radius: 0;
+  }
+  .container footer h4 {
+    font-size: 1.2rem;
+  }
+  .container footer h4 i {
+    font-size: 1.2rem;
   }
 }
 
