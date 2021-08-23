@@ -35,6 +35,7 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../images/stars-bg.jpg") center center no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/stars-bg.jpg") center center no-repeat;
   background-size: cover;
+  background-color: #0e1314;
 }
 
 html, body {
@@ -42,7 +43,6 @@ html, body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0e1314;
 }
 
 .container {

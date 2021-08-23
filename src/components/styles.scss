@@ -40,6 +40,7 @@ $boxShadow: 0 0 5px 0 rgba(255, 255, 255, 0.4);
 body {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/stars-bg.jpg') center center no-repeat;
     background-size: cover;
+    background-color: rgb(14, 19, 20);
 }
 
 html, body { 
@@ -47,7 +48,6 @@ html, body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: rgb(14, 19, 20);
 }
 
 .container {
