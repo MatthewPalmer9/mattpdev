@@ -1,20 +1,18 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from './components/Navbar.jsx';
-import Index from './components/Index.jsx';
+import './components/styles.css';
+import Content from './components/Content';
+import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
+import Footer from './components/Footer';
+import Main from './components/About';
 
-export default class App extends Component {
-  render() {
-    return (
-      <>
-        <Router>
-          <Navbar />
-            <Switch>
-              <Route exact path="/" component={Index} />
-            </Switch>
-        </Router>
-      </>
-    )
-  }
-}
-
+export default function App() {
+  return (
+    <div className="container">
+      <Navbar />
+      <Main />
+      <Sidebar />
+      <Content contentID="content1" />
+      <Footer />
+    </div>
+  );
+};
