@@ -1,0 +1,15 @@
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 120px;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+footer span {
+  font-size: 12px;
+  color: #868e96;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=footer.css.map */

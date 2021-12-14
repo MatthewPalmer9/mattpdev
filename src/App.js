@@ -1,18 +1,14 @@
-import './components/styles.css';
-import Content from './components/Content';
-import Navbar from './components/Navbar';
-import Sidebar from './components/Sidebar';
-import Footer from './components/Footer';
-import Main from './components/About';
+import Navbar from "./components/navbar/Navbar.jsx";
+import Container from "./components/container/Container.jsx";
 
-export default function App() {
+
+function App() {
   return (
-    <div className="container">
+    <>
       <Navbar />
-      <Main />
-      <Sidebar />
-      <Content contentID="content1" />
-      <Footer />
-    </div>
+      <Container />
+    </>
   );
-};
+}
+
+export default App;
