@@ -15,6 +15,30 @@
   border-bottom: 2px solid #1c7ed6;
 }
 
+.navbar .mobile-menu {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding-right: 30px;
+}
+
+.navbar .mobile-menu .bar1, .navbar .mobile-menu .bar2, .navbar .mobile-menu .bar3 {
+  border-radius: 10px;
+  background-color: #1c7ed6;
+  width: 34px;
+  height: 4px;
+  margin: 2px 0;
+}
+
 .navbar .brand {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,5 +93,24 @@
   cursor: pointer;
   color: #495057;
   border-top: 2px solid #1c7ed6;
+  background-color: rgba(28, 126, 214, 0.1);
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar .brand {
+    padding-left: 20px;
+    font-size: 16px;
+  }
+  .navbar .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar .mobile-menu:hover {
+    cursor: pointer;
+  }
+  .navbar .nav-ul {
+    display: none;
+  }
 }
 /*# sourceMappingURL=navbar.css.map */

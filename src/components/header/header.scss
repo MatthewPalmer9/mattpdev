@@ -37,3 +37,30 @@ header {
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        margin-bottom: 120px;
+
+        .header-right {
+            display: none;
+        }
+
+        .header-left {
+            
+            h1, p {
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 46px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}
