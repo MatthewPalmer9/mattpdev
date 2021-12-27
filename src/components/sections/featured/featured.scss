@@ -55,6 +55,7 @@
 
     .testimonial {
         display: grid;
+        align-items: center;
         grid-template-columns: 1fr 4fr;
         padding: 24px 36px;
         margin-top:28px;
@@ -78,7 +79,6 @@
             p {
                 color: #d0ebff;
                 font-size: 14px;
-                margin-bottom: 12px;
             }
 
             span {
