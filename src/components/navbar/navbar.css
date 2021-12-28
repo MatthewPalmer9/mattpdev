@@ -66,7 +66,8 @@
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: -200px;
+  right: -1000px;
+  top: 60px;
   height: 200px;
   width: 100vw;
   background: #4973ff;
@@ -87,6 +88,7 @@
   -webkit-transform: translate(-50%, -75%);
           transform: translate(-50%, -75%);
   background: #fff;
+  z-index: 10;
 }
 
 .navbar .mobile-dropdown::before {
@@ -130,11 +132,13 @@
 }
 
 .navbar .mobile-dropdown.active {
+  right: 0;
   top: 60px;
   -webkit-transition: 200ms;
   transition: 200ms;
   -webkit-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.3);
           box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.3);
+  z-index: 10;
 }
 
 .navbar .brand {
