@@ -2,6 +2,19 @@ import React from 'react';
 import './navbar.css';
 
 export default function Navbar() {
+
+    const toggleMenu = () => {
+        const bar1 = document.querySelector(".bar1");
+        const bar2 = document.querySelector(".bar2");
+        const bar3 = document.querySelector(".bar3");
+        const menu = document.querySelector(".mobile-dropdown");
+
+        bar1.classList.toggle("active");
+        bar2.classList.toggle("active");
+        bar3.classList.toggle("active");
+        menu.classList.toggle("active");
+    };
+
     return (
         <>
             <nav className="navbar">
@@ -18,10 +31,20 @@ export default function Navbar() {
                     <li>Contact</li>
                     <li>Resume</li>
                 </ul>
-                <div className="mobile-menu">
+                <div onClick={toggleMenu} className="mobile-menu">
                     <div className="bar1"></div>
                     <div className="bar2"></div>
                     <div className="bar3"></div>
+                </div>
+
+                <div className="mobile-dropdown">
+                    <ul className="mobile-ul">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Projects</li>
+                        <li>Contact</li>
+                        <li>Resume</li>
+                    </ul>
                 </div>
             </nav>
         </>
