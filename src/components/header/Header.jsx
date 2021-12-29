@@ -7,8 +7,7 @@ export default function Header() {
             <header>
                 <div className="header-left">
                     <h1>Front-End Professional Developer and Designer</h1>
-                    <p>Practice, professionalism, and passion. Key ingredients that make up a developer who cares. Design isn't just about how it looks and feels.</p>
-                    <em>It's about how it works.</em>
+                    <p>Practice, professionalism, and passion. Key ingredients that make up a developer who cares. Design isn't just about how it looks and feels. <em>It's about how it works.</em></p>
                 </div>
                 <div className="header-right">
                     

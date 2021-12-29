@@ -19,6 +19,7 @@ header .header-left {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 header .header-left h1 {
@@ -49,8 +50,9 @@ header .header-right .header-svg {
 
 @media only screen and (max-width: 768px) {
   header {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin: 0 auto;
     margin-bottom: 120px;
   }
@@ -87,10 +89,11 @@ header .header-right .header-svg {
     text-align: center;
   }
   header .header-left h1 {
-    font-size: 34px;
+    font-size: 30px;
   }
   header .header-left p {
-    font-size: 16px;
+    font-size: 15px;
+    padding: 0 18px;
   }
 }
 
@@ -111,7 +114,7 @@ header .header-right .header-svg {
     font-size: 32px;
   }
   header .header-left p {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=header.css.map */
