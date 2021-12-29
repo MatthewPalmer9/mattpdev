@@ -30,7 +30,7 @@
           align-items: center;
   height: 100%;
   width: 100px;
-  padding-right: 30px;
+  padding-right: 10px;
 }
 
 .navbar .mobile-menu .bar1, .navbar .mobile-menu .bar2, .navbar .mobile-menu .bar3 {
@@ -62,9 +62,7 @@
 .navbar .mobile-dropdown {
   -webkit-transition: 200ms;
   transition: 200ms;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   position: absolute;
   right: -1000px;
   top: 60px;
@@ -232,6 +230,11 @@
   }
   .navbar .mobile-menu:hover {
     cursor: pointer;
+  }
+  .navbar .mobile-dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .navbar .nav-ul {
     display: none;

@@ -38,7 +38,7 @@ export default function FeaturedReasons() {
                     </div>
                 </div>
                 <h3>TESTIMONIALS</h3>
-                <div className="testimonial">
+                <div className="testimonial a">
                     <img src="malcolm.jfif" alt="Malcolm Leake" />
                     <div className="testimonial-text">
                         <h4>Matthew Palmer is very enthusiastic when it comes to writing clean code and helping others.</h4>
@@ -50,6 +50,22 @@ export default function FeaturedReasons() {
                         </p>
                         <span>
                             <p>⎯ Malcolm Leake, Cloud Engineer at Deloitte</p> <a href="https://www.linkedin.com/in/malcolmleake/"><i className="fab fa-linkedin"></i></a>
+                        </span>
+                    </div>
+                </div>
+                <div className="testimonial b reverse">
+                    <img src="marlon.jfif" alt="Marlon Braga" />
+                    <div className="testimonial-text">
+                        <h4>Matthew has a positive attitude in the face of challenging tasks.</h4>
+                        <p>
+                            <em>"He just dives right in and has and incredible capacity to quickly focus and get into a state of flow, 
+                                he just loves what he does and he shows it in every word when sharing his thoughts and ideas with 
+                                colleagues. [...] I'm grateful to have shared this initial path of 
+                                my professional development with an individual like Matthew. I hope to always have someone like him in my 
+                                team, it just makes work feel lighter."</em>
+                        </p>
+                        <span>
+                            <p>⎯ Marlon Braga, Application Developer at IBM</p> <a href="https://www.linkedin.com/in/marlon-braga"><i className="fab fa-linkedin"></i></a>
                         </span>
                     </div>
                 </div>

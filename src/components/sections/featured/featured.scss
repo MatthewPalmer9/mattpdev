@@ -17,6 +17,8 @@
     .grid-col-3 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        width: 100%;
         gap: 60px;
 
         .feature-icon {
@@ -55,13 +57,14 @@
 
     .testimonial {
         display: grid;
+        grid-template-areas: a b;
         align-items: center;
         grid-template-columns: 1fr 4fr;
         padding: 24px 36px;
         margin-top:28px;
         border-radius: 12px;
         width: 100%;
-        height: 200px;
+        height: 220px;
         background-color: #1c7ed6;
 
         .testimonial-text {
@@ -99,11 +102,59 @@
             }
         }
 
+        .testimonial.reverse {
+            grid-template-areas: 'b a';
+        }
+
+        .a {
+            grid-area: a;
+        }
+
+        .b {
+            grid-area: b;
+        }
+
         img {
             box-shadow: 0 20px 30px 0 rgba(255, 255, 255, 0.2);
             border-radius: 12px;
             width: 150px;
             height: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    .featured {
+
+        .grid-col-3 {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        .testimonial {
+            grid-template-columns: 1fr 2fr;
+
+            img {
+                width: 130px;
+            }
+
+            .testimonial-text {
+
+
+                h4 {
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 11px;
+                }
+
+                span {
+                    p {
+                        font-size: 10px;
+                    }
+                }
+            }
         }
     }
 }
