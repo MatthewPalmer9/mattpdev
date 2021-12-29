@@ -35,9 +35,11 @@ header .header-left p {
   width: 100%;
 }
 
-header .header-left p em {
+header .header-left em {
   font-weight: 500;
+  padding-top: 3px;
   border-bottom: 2px solid #1c7ed6;
+  width: 178px;
 }
 
 header .header-right .header-svg {
@@ -59,10 +61,15 @@ header .header-right .header-svg {
     text-align: center;
   }
   header .header-left h1 {
-    font-size: 46px;
+    font-size: 36px;
   }
   header .header-left p {
-    font-size: 20px;
+    font-size: 16px;
+    width: 100%;
+    padding: 0 24px;
+  }
+  header .header-left em {
+    margin: 0 auto;
   }
 }
 
