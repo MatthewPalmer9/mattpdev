@@ -57,7 +57,6 @@
 
     .testimonial {
         display: grid;
-        grid-template-areas: a b;
         align-items: center;
         grid-template-columns: 1fr 4fr;
         padding: 24px 36px;
@@ -152,6 +151,95 @@
                 span {
                     p {
                         font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .featured {
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        .grid-col-3 {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        .testimonial {
+            grid-template-columns: 1fr 2.5fr;
+            height: 190px;
+            padding: 18px 20px;
+
+            img {
+                width: 100px;
+            }
+
+            .testimonial-text {
+
+                h4 {
+                    font-size: 12px;
+                }
+
+                p {
+                    font-size: 10px;
+                }
+
+                span {
+                    p {
+                        font-size: 10px;
+                    }
+
+                    a {
+                        i {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .featured {
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        .grid-col-3 {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        .testimonial {
+            grid-template-columns: 1fr 2.4fr;
+            height: 180px;
+            padding: 18px 20px;
+
+            img {
+                width: 80px;
+            }
+
+            .testimonial-text {
+                height: 130px;
+
+                h4 {
+                    font-size: 10px;
+                }
+
+                p {
+                    font-size: 8px;
+                }
+
+                span {
+                    p {
+                        font-size: 8px;
                     }
                 }
             }

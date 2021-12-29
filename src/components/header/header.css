@@ -64,4 +64,46 @@ header .header-right .header-svg {
     font-size: 20px;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  header {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 0 auto;
+    margin-bottom: 120px;
+  }
+  header .header-right {
+    display: none;
+  }
+  header .header-left h1, header .header-left p {
+    text-align: center;
+  }
+  header .header-left h1 {
+    font-size: 34px;
+  }
+  header .header-left p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  header {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 0 auto;
+    margin-bottom: 120px;
+  }
+  header .header-right {
+    display: none;
+  }
+  header .header-left h1, header .header-left p {
+    text-align: center;
+  }
+  header .header-left h1 {
+    font-size: 32px;
+  }
+  header .header-left p {
+    font-size: 16px;
+  }
+}
 /*# sourceMappingURL=header.css.map */

@@ -38,7 +38,7 @@ export default function FeaturedReasons() {
                     </div>
                 </div>
                 <h3>TESTIMONIALS</h3>
-                <div className="testimonial a">
+                <div className="testimonial">
                     <img src="malcolm.jfif" alt="Malcolm Leake" />
                     <div className="testimonial-text">
                         <h4>Matthew Palmer is very enthusiastic when it comes to writing clean code and helping others.</h4>
@@ -53,7 +53,7 @@ export default function FeaturedReasons() {
                         </span>
                     </div>
                 </div>
-                <div className="testimonial b reverse">
+                <div className="testimonial">
                     <img src="marlon.jfif" alt="Marlon Braga" />
                     <div className="testimonial-text">
                         <h4>Matthew has a positive attitude in the face of challenging tasks.</h4>
