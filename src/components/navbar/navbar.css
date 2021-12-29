@@ -218,7 +218,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .navbar .brand {
     padding-left: 20px;
     font-size: 16px;

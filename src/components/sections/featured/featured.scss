@@ -144,26 +144,30 @@
         }
 
         .testimonial {
-            grid-template-columns: 1fr 2fr;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            height: auto;
 
             img {
-                width: 130px;
+                width: 150px;
+                margin: 5px 0;
             }
 
             .testimonial-text {
 
-
                 h4 {
-                    font-size: 14px;
+                    font-size: 24px;
                 }
 
                 p {
-                    font-size: 11px;
+                    font-size: 16px;
                 }
 
                 span {
                     p {
-                        font-size: 10px;
+                        font-size: 14px;
                     }
                 }
             }
@@ -185,31 +189,33 @@
 
         .testimonial {
             grid-template-columns: 1fr 2fr;
-            height: 220px;
+            height: 360px;
             padding: 18px 15px;
 
             img {
-                width: 100px;
+                width: 130px;
             }
 
             .testimonial-text {
 
                 h4 {
-                    font-size: 12px;
+                    font-size: 16px;
                 }
 
                 p {
-                    font-size: 10px;
+                    font-size: 12px;
                 }
 
                 span {
                     p {
+                        margin-top: 5px;
                         font-size: 10px;
                     }
 
                     a {
                         i {
-                            font-size: 1.5rem;
+                            margin-top: 5px;
+                            font-size: 1.8rem;
                         }
                     }
                 }
