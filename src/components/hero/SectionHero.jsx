@@ -1,4 +1,4 @@
-import hero from './hero.png';
+
 
 export default function SectionHero() {
     return (
@@ -12,10 +12,10 @@ export default function SectionHero() {
                     </p>
                     <div className="hero-btns">
                         <button className="hero-btn">
-                            <a href="#">Contact Me</a>
+                            <a href="/">Contact Me</a>
                         </button>
                         <button className="hero-btn cta">
-                            <a href="#">Learn more &darr;</a>
+                            <a href="/">Learn more &darr;</a>
                         </button>
                     </div>
                 </div>
