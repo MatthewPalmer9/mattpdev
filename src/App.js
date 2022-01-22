@@ -1,12 +1,13 @@
-import Navbar from "./components/navbar/Navbar.jsx";
-import Container from "./components/container/Container.jsx";
-
+import React from 'react';
+import Header from './components/Header.jsx';
+import SectionHero from './components/hero/SectionHero.jsx';
+import Main from './components/Main.jsx';
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Container />
+      <Header />
+      <Main />
     </>
   );
 }

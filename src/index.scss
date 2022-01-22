@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+    transition: all ease 0.3s;
+}
+
+:root {
+    --DARK-GREY: #212529;
+    --LIGHT-GREY: #495057;
+    --GREY: #343a40;
+    --TINTED-WHITE-GREY: #868e96;
+    --WHITE-GREY: #adb5bd;
+    --PURE-WHITE: #fff;
+    --LIGHT-BLUE: #e7f5ff;
+    --LIGHTER-BLUE: #339af0;
+    --BLUE: #228be6;
+    --DARKER-BLUE: #1c7ed6;
+}
+
+html {
+    color: var(--GREY);
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--PURE-WHITE);
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+
+    /*************************/
+    /*** GENERAL ***/
+    /*************************/
+    
+    a {
+        text-decoration: none;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    
+    /*************************/
+    /*** MAIN HEADER ***/
+    /*************************/
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 4.8rem;
+        height: 9.6rem;
+        background-color: var(--LIGHT-BLUE);
+    
+        .brand {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            font-weight: 600;
+            font-size: 2.8rem;
+            gap: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15rem;
+            
+            a {
+                color: var(--DARK-GREY);
+            }
+    
+            .brand-p {
+                color: var(--BLUE);
+                font-size: 3.2rem;
+            }
+        }
+    
+        .main-nav {
+            
+            .main-nav-list {
+                display: flex;
+                align-items: center;
+                gap: 4.8rem;
+                
+                li {
+                    font-size: 2rem;
+                    font-weight: 500;
+                    
+                    .main-nav-link {
+                        color: var(--GREY);
+    
+                        &:hover {
+                            color: var(--BLUE);
+                        }
+                    }
+    
+                    .nav-cta {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5rem;
+                        background-color: var(--BLUE);
+                        color: var(--PURE-WHITE);
+                        padding: 0.8rem 1.8rem;
+                        border-radius: 9px;
+    
+                        &:hover {
+                            background-color: var(--LIGHTER-BLUE);
+                            color: var(--PURE-WHITE);
+                        }
+    
+                        .icon {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    /*************************/
+    /*** HERO SECTION ***/
+    /*************************/
+    
+    .section-hero {
+        background-color: var(--LIGHT-BLUE);
+        padding: 4.8rem 0 9.6rem 0;
+    
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 130rem;
+            margin: 0 auto !important;
+            gap: 9.6rem;
+            align-items: center;
+            padding: 0 3.2rem;
+
+            .hero-interaction-box {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                // background-color: grey;
+                perspective: 25rem;
+
+                .box-container {
+                    width: 90%;
+                    height: 90%;
+                    background-color: var(--BLUE);
+                    background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)) var(--BLUE);
+                    transform-style: preserve-3d;
+                    transform: rotateX(18deg) rotateY(-6deg) scale(1.2);
+                    box-shadow: 2rem 2rem 3rem 0 rgba(0, 0, 0, 0.2);
+                    overflow: hidden;
+
+                    &:hover {
+                        transform: translateY(-4%) translateX(-2%) rotateX(18deg) rotateY(-6deg) scale(1.22);
+                        box-shadow: 2rem 2rem 3rem 0 rgba(0, 0, 0, 0.16);
+                    }
+
+                    .navbar {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        height: 2rem;
+                        background-color: var(--PURE-WHITE);
+                        padding: 1rem 2rem;
+                        box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.3);
+
+                        .box-list {
+                            display: flex;
+                            gap: 1.4rem;
+
+                            .box-list-item {
+
+                                &:hover {
+                                    cursor: pointer;
+                                    color: var(--DARKER-BLUE);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .hero-text-box {
+                //
+    
+                .hero-primary {
+                    font-size: 5.2rem;
+                    font-weight: 700;
+                    letter-spacing: -0.5px;
+                    line-height: 1.05;
+                    margin-bottom: 2.8rem;
+                }
+    
+                .hero-description{
+                    font-size: 2rem;
+                    line-height: 1.6;
+                    margin-bottom: 1.8rem;
+                }
+
+                .hero-btns {
+                    display: flex;
+                    gap: 1.2rem;
+                    margin-top: 4.8rem;
+
+                    .hero-btn {
+                        padding: 1.2rem 3.2rem;
+                        border: none;
+                        border-radius: 0.9rem;
+                        background-color: var(--BLUE);
+                        
+                        a {
+                            color: #fff;
+                            font-size: 2rem;
+                        }
+
+                        &:hover {
+                            background-color: var(--DARKER-BLUE);
+                            cursor: pointer;
+                        }
+                    }
+
+                    .cta {
+                        background-color: var(--PURE-WHITE);
+
+                        a {
+                            color: var(--DARK-GREY);
+                        }
+
+                        &:hover {
+                            background-color: transparent;
+                            cursor: pointer;
+                            box-shadow: inset 0 0 0 0.4rem rgba(255, 255, 255, 0.8);
+                        }
+                    }
+                }
+    
+            }
+            
+            .hero-img-box {
+                .hero-img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
