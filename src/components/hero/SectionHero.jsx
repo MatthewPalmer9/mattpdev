@@ -63,6 +63,73 @@ export default function SectionHero() {
                         <div className="container">
                             <div className="frame">
                                 <ion-icon name="person-circle-outline"></ion-icon>
+                                <div className="description-lines">
+                                    <div className="line-sm color-red"></div>
+                                    <div className="line-md color-orange"></div>
+                                    <div className="line-lg color-yellow"></div>
+                                    <div className="line-sm color-green"></div>
+                                </div>
+                                <div className="description-lines">
+                                    <div className="line-md color-blue"></div>
+                                    <div className="line-lg color-purple"></div>
+                                    <div className="line-sm color-violet"></div>
+                                    <div className="line-sm color-red"></div>
+                                </div>
+                                <div className="description-lines">
+                                    <div className="line-md color-orange"></div>
+                                    <div className="line-sm color-yellow"></div>
+                                    <div className="line-lg color-green"></div>
+                                    <div className="line-sm color-blue"></div>
+                                </div>
+                            </div>
+                            <div className="frame no-border">
+                                <h1>{'<h1>Hello world! </h1>'}</h1>
+                                <div className="text">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <ion-icon name="checkmark-done-outline"></ion-icon>
+                                            </span>
+                                            <div className="color-red line-xlg"></div>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <ion-icon name="checkmark-done-outline"></ion-icon>
+                                            </span>
+                                            <div className="color-orange line-xlg"></div>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <ion-icon name="checkmark-done-outline"></ion-icon>
+                                            </span>
+                                            <div className="color-yellow line-xlg"></div>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <ion-icon name="checkmark-done-outline"></ion-icon>
+                                            </span>
+                                            <div className="color-green line-xlg"></div>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <ion-icon name="checkmark-done-outline"></ion-icon>
+                                            </span>
+                                            <div className="color-blue line-xlg"></div>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <ion-icon name="checkmark-done-outline"></ion-icon>
+                                            </span>
+                                            <div className="color-purple line-xlg"></div>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <ion-icon name="checkmark-done-outline"></ion-icon>
+                                            </span>
+                                            <div className="color-pink line-xlg"></div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>

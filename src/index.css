@@ -49,6 +49,88 @@ body ul {
   list-style: none;
 }
 
+body .color-red {
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+body .color-red:hover {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(224, 49, 49, 0.8)), to(rgba(0, 0, 0, 0.7))) #e03131 !important;
+  background: linear-gradient(to left, rgba(224, 49, 49, 0.8), rgba(0, 0, 0, 0.7)) #e03131 !important;
+}
+
+body .color-orange {
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+body .color-orange:hover {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(232, 89, 12, 0.8)), to(rgba(0, 0, 0, 0.7))), rgba(232, 89, 12, 0.8) !important;
+  background: linear-gradient(to left, rgba(232, 89, 12, 0.8), rgba(0, 0, 0, 0.7)), rgba(232, 89, 12, 0.8) !important;
+}
+
+body .color-yellow {
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+body .color-yellow:hover {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(252, 196, 25, 0.8)), to(rgba(0, 0, 0, 0.7))), rgba(252, 196, 25, 0.8) !important;
+  background: linear-gradient(to left, rgba(252, 196, 25, 0.8), rgba(0, 0, 0, 0.7)), rgba(252, 196, 25, 0.8) !important;
+}
+
+body .color-green {
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+body .color-green:hover {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(47, 158, 68, 0.8)), to(rgba(0, 0, 0, 0.7))), rgba(47, 158, 68, 0.8) !important;
+  background: linear-gradient(to left, rgba(47, 158, 68, 0.8), rgba(0, 0, 0, 0.7)), rgba(47, 158, 68, 0.8) !important;
+}
+
+body .color-blue {
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+body .color-blue:hover {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(25, 113, 194, 0.8)), to(rgba(0, 0, 0, 0.7))), rgba(25, 113, 194, 0.8) !important;
+  background: linear-gradient(to left, rgba(25, 113, 194, 0.8), rgba(0, 0, 0, 0.7)), rgba(25, 113, 194, 0.8) !important;
+}
+
+body .color-purple {
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+body .color-purple:hover {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(156, 54, 181, 0.8)), to(rgba(0, 0, 0, 0.7))), rgba(156, 54, 181, 0.8) !important;
+  background: linear-gradient(to left, rgba(156, 54, 181, 0.8), rgba(0, 0, 0, 0.7)), rgba(156, 54, 181, 0.8) !important;
+}
+
+body .color-violet {
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+body .color-violet:hover {
+  color: rgba(214, 51, 108, 0.8);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(214, 51, 108, 0.8)), to(rgba(0, 0, 0, 0.7))), rgba(214, 51, 108, 0.8) !important;
+  background: linear-gradient(to left, rgba(214, 51, 108, 0.8), rgba(0, 0, 0, 0.7)), rgba(214, 51, 108, 0.8) !important;
+}
+
+body .color-pink {
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+body .color-pink:hover {
+  color: #ff47c8;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 71, 200, 0.8)), to(rgba(0, 0, 0, 0.7))), rgba(255, 71, 200, 0.8) !important;
+  background: linear-gradient(to left, rgba(255, 71, 200, 0.8), rgba(0, 0, 0, 0.7)), rgba(255, 71, 200, 0.8) !important;
+}
+
 body .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,7 +229,7 @@ body .header .main-nav .main-nav-list li .nav-cta .icon {
 
 body .section-hero {
   background-color: var(--LIGHT-BLUE);
-  padding: 4.8rem 0 9.6rem 0;
+  padding: 12rem 0 9.6rem 0;
 }
 
 body .section-hero .hero {
@@ -171,32 +253,32 @@ body .section-hero .hero .hero-interaction-box {
   position: relative;
   width: 100%;
   height: 100%;
-  -webkit-perspective: 50rem;
-          perspective: 50rem;
+  -webkit-perspective: 100rem;
+          perspective: 100rem;
 }
 
 body .section-hero .hero .hero-interaction-box .box-container {
-  width: 90%;
+  max-width: 100rem;
   height: 25rem;
   background-color: var(--BLUE);
   background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.5))) var(--BLUE);
   background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)) var(--BLUE);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transform: rotateX(18deg) rotateY(-6deg) scale(1);
-          transform: rotateX(18deg) rotateY(-6deg) scale(1);
-  -webkit-box-shadow: 2rem 2rem 3rem 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 2rem 2rem 3rem 0 rgba(0, 0, 0, 0.2);
+  -webkit-transform: rotateX(15deg) rotateY(-15deg) rotateZ(4deg);
+          transform: rotateX(15deg) rotateY(-15deg) rotateZ(4deg);
+  -webkit-box-shadow: 2rem 2rem 3rem 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 2rem 2rem 3rem 0 rgba(0, 0, 0, 0.3);
   overflow: hidden;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
 }
 
 body .section-hero .hero .hero-interaction-box .box-container:hover {
-  -webkit-transform: translate(-3%, -4%) rotateX(18deg) rotateY(-6deg) scale(1.05);
-          transform: translate(-3%, -4%) rotateX(18deg) rotateY(-6deg) scale(1.05);
-  -webkit-box-shadow: 2rem 2rem 3rem 0 rgba(0, 0, 0, 0.16);
-          box-shadow: 2rem 2rem 3rem 0 rgba(0, 0, 0, 0.16);
+  -webkit-transform: translate(-1%, -1%) rotateX(15deg) rotateY(-15deg) rotateZ(4deg);
+          transform: translate(-1%, -1%) rotateX(15deg) rotateY(-15deg) rotateZ(4deg);
+  -webkit-box-shadow: 3rem 2rem 3rem 0 rgba(0, 0, 0, 0.24);
+          box-shadow: 3rem 2rem 3rem 0 rgba(0, 0, 0, 0.24);
 }
 
 body .section-hero .hero .hero-interaction-box .box-container .navbar {
@@ -216,6 +298,10 @@ body .section-hero .hero .hero-interaction-box .box-container .navbar {
           box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.3);
 }
 
+body .section-hero .hero .hero-interaction-box .box-container .navbar .brand {
+  font-weight: 700;
+}
+
 body .section-hero .hero .hero-interaction-box .box-container .navbar .box-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,6 +312,8 @@ body .section-hero .hero .hero-interaction-box .box-container .navbar .box-list 
 body .section-hero .hero .hero-interaction-box .box-container .navbar .box-list .box-list-item {
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
+  height: 100%;
+  font-weight: 600;
 }
 
 body .section-hero .hero .hero-interaction-box .box-container .navbar .box-list .box-list-item:hover {
@@ -240,23 +328,36 @@ body .section-hero .hero .hero-interaction-box .box-container .container {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
+  gap: 1.5rem;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   height: 100%;
   width: 100%;
   position: relative;
+  padding: 1rem 2rem;
+}
+
+body .section-hero .hero .hero-interaction-box .box-container .container .no-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none !important;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
 }
 
 body .section-hero .hero .hero-interaction-box .box-container .container .frame {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: top;
-      -ms-flex-align: top;
-          align-items: top;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: -0.9rem;
   width: 20rem;
   height: 18rem;
@@ -264,11 +365,103 @@ body .section-hero .hero .hero-interaction-box .box-container .container .frame 
   border-radius: 1rem;
   font-size: 10rem;
   color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 body .section-hero .hero .hero-interaction-box .box-container .container .frame:hover {
   color: white;
   border: 0.3rem solid white;
+}
+
+body .section-hero .hero .hero-interaction-box .box-container .container .frame h1 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+body .section-hero .hero .hero-interaction-box .box-container .container .frame p {
+  font-size: 1.2rem;
+}
+
+body .section-hero .hero .hero-interaction-box .box-container .container .frame ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 1.2rem;
+  list-style: disc;
+  line-height: 1.25;
+}
+
+body .section-hero .hero .hero-interaction-box .box-container .container .frame ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.2rem;
+  height: 100%;
+  cursor: pointer;
+  margin-top: -0.6rem;
+}
+
+body .section-hero .hero .hero-interaction-box .box-container .container .frame ul li span {
+  font-size: 2rem;
+  color: #2f9e44;
+}
+
+body .section-hero .hero .hero-interaction-box .box-container .container .frame ul .line-xlg {
+  border-radius: 1rem;
+  width: 15rem;
+  height: 0.8rem;
+  background: -webkit-gradient(linear, right top, left top, from(white), to(rgba(0, 0, 0, 0.28))), rgba(255, 255, 255, 0.8);
+  background: linear-gradient(to left, white, rgba(0, 0, 0, 0.28)), rgba(255, 255, 255, 0.8);
+}
+
+body .section-hero .hero .hero-interaction-box .box-container .container .frame .description-lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+body .section-hero .hero .hero-interaction-box .box-container .container .frame .description-lines:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 1rem;
+}
+
+body .section-hero .hero .hero-interaction-box .box-container .container .frame .description-lines .line-sm {
+  width: 1rem;
+  height: 0.4rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+body .section-hero .hero .hero-interaction-box .box-container .container .frame .description-lines .line-md {
+  width: 2rem;
+  height: 0.4rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+body .section-hero .hero .hero-interaction-box .box-container .container .frame .description-lines .line-lg {
+  width: 6rem;
+  height: 0.4rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
 }
 
 body .section-hero .hero .hero-text-box .hero-primary {
