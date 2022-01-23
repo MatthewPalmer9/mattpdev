@@ -4,8 +4,6 @@
   font-family: 'Rubik', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: all ease 0.3s;
-  transition: all ease 0.3s;
 }
 
 :root {
@@ -107,6 +105,8 @@ body .header .main-nav .main-nav-list li {
 
 body .header .main-nav .main-nav-list li .main-nav-link {
   color: var(--GREY);
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
 body .header .main-nav .main-nav-list li .main-nav-link:hover {
@@ -161,6 +161,9 @@ body .section-hero .hero {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0 3.2rem;
 }
 
@@ -168,28 +171,30 @@ body .section-hero .hero .hero-interaction-box {
   position: relative;
   width: 100%;
   height: 100%;
-  -webkit-perspective: 25rem;
-          perspective: 25rem;
+  -webkit-perspective: 50rem;
+          perspective: 50rem;
 }
 
 body .section-hero .hero .hero-interaction-box .box-container {
   width: 90%;
-  height: 90%;
+  height: 25rem;
   background-color: var(--BLUE);
   background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.5))) var(--BLUE);
   background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)) var(--BLUE);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transform: rotateX(18deg) rotateY(-6deg) scale(1.2);
-          transform: rotateX(18deg) rotateY(-6deg) scale(1.2);
+  -webkit-transform: rotateX(18deg) rotateY(-6deg) scale(1);
+          transform: rotateX(18deg) rotateY(-6deg) scale(1);
   -webkit-box-shadow: 2rem 2rem 3rem 0 rgba(0, 0, 0, 0.2);
           box-shadow: 2rem 2rem 3rem 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
 body .section-hero .hero .hero-interaction-box .box-container:hover {
-  -webkit-transform: translateY(-4%) translateX(-2%) rotateX(18deg) rotateY(-6deg) scale(1.22);
-          transform: translateY(-4%) translateX(-2%) rotateX(18deg) rotateY(-6deg) scale(1.22);
+  -webkit-transform: translate(-3%, -4%) rotateX(18deg) rotateY(-6deg) scale(1.05);
+          transform: translate(-3%, -4%) rotateX(18deg) rotateY(-6deg) scale(1.05);
   -webkit-box-shadow: 2rem 2rem 3rem 0 rgba(0, 0, 0, 0.16);
           box-shadow: 2rem 2rem 3rem 0 rgba(0, 0, 0, 0.16);
 }
@@ -218,9 +223,52 @@ body .section-hero .hero .hero-interaction-box .box-container .navbar .box-list 
   gap: 1.4rem;
 }
 
+body .section-hero .hero .hero-interaction-box .box-container .navbar .box-list .box-list-item {
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
 body .section-hero .hero .hero-interaction-box .box-container .navbar .box-list .box-list-item:hover {
   cursor: pointer;
   color: var(--DARKER-BLUE);
+}
+
+body .section-hero .hero .hero-interaction-box .box-container .container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+body .section-hero .hero .hero-interaction-box .box-container .container .frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -0.9rem;
+  width: 20rem;
+  height: 18rem;
+  border: 0.3rem solid rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  font-size: 10rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+body .section-hero .hero .hero-interaction-box .box-container .container .frame:hover {
+  color: white;
+  border: 0.3rem solid white;
 }
 
 body .section-hero .hero .hero-text-box .hero-primary {
@@ -250,6 +298,9 @@ body .section-hero .hero .hero-text-box .hero-btns .hero-btn {
   border: none;
   border-radius: 0.9rem;
   background-color: var(--BLUE);
+  margin-bottom: 5.6rem;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
 body .section-hero .hero .hero-text-box .hero-btns .hero-btn a {
@@ -275,6 +326,67 @@ body .section-hero .hero .hero-text-box .hero-btns .cta:hover {
   cursor: pointer;
   -webkit-box-shadow: inset 0 0 0 0.4rem rgba(255, 255, 255, 0.8);
           box-shadow: inset 0 0 0 0.4rem rgba(255, 255, 255, 0.8);
+}
+
+body .section-hero .hero .hero-text-box .technologies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+body .section-hero .hero .hero-text-box .technologies .technology {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3.2rem;
+  width: 5.6rem;
+  height: 5.6rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 200, 0.165))) var(--PURE-WHITE);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 200, 0.165)) var(--PURE-WHITE);
+  border-radius: 50%;
+  border: 0.2rem solid var(--LIGHT-BLUE);
+  margin-left: -1.2rem;
+}
+
+body .section-hero .hero .hero-text-box .technologies .js {
+  color: gold;
+}
+
+body .section-hero .hero .hero-text-box .technologies .nodejs {
+  color: green;
+}
+
+body .section-hero .hero .hero-text-box .technologies .html5 {
+  color: chocolate;
+}
+
+body .section-hero .hero .hero-text-box .technologies .css3 {
+  color: royalblue;
+}
+
+body .section-hero .hero .hero-text-box .technologies .react {
+  color: aqua;
+}
+
+body .section-hero .hero .hero-text-box .technologies .sass {
+  color: #c69;
+}
+
+body .section-hero .hero .hero-text-box .technologies .docker {
+  color: #2591e6;
+}
+
+body .section-hero .hero .hero-img-box {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body .section-hero .hero .hero-img-box .hero-img {

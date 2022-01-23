@@ -3,7 +3,6 @@
     padding: 0;
     font-family: 'Rubik', sans-serif;
     box-sizing: border-box;
-    transition: all ease 0.3s;
 }
 
 :root {
@@ -88,6 +87,7 @@ body {
                     
                     .main-nav-link {
                         color: var(--GREY);
+                        transition: all ease 0.3s;
     
                         &:hover {
                             color: var(--BLUE);
@@ -135,6 +135,7 @@ body {
             margin: 0 auto !important;
             gap: 9.6rem;
             align-items: center;
+            justify-content: center;
             padding: 0 3.2rem;
 
             .hero-interaction-box {
@@ -142,20 +143,21 @@ body {
                 width: 100%;
                 height: 100%;
                 // background-color: grey;
-                perspective: 25rem;
+                perspective: 50rem;
 
                 .box-container {
                     width: 90%;
-                    height: 90%;
+                    height: 25rem;
                     background-color: var(--BLUE);
                     background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)) var(--BLUE);
                     transform-style: preserve-3d;
-                    transform: rotateX(18deg) rotateY(-6deg) scale(1.2);
+                    transform: rotateX(18deg) rotateY(-6deg) scale(1);
                     box-shadow: 2rem 2rem 3rem 0 rgba(0, 0, 0, 0.2);
                     overflow: hidden;
+                    transition: all ease 0.3s;
 
                     &:hover {
-                        transform: translateY(-4%) translateX(-2%) rotateX(18deg) rotateY(-6deg) scale(1.22);
+                        transform: translate(-3%, -4%) rotateX(18deg) rotateY(-6deg) scale(1.05);
                         box-shadow: 2rem 2rem 3rem 0 rgba(0, 0, 0, 0.16);
                     }
 
@@ -173,11 +175,41 @@ body {
                             gap: 1.4rem;
 
                             .box-list-item {
+                                transition: all ease 0.3s;
 
                                 &:hover {
                                     cursor: pointer;
                                     color: var(--DARKER-BLUE);
                                 }
+                            }
+                        }
+                    }
+
+                    .container {
+                        display: grid;
+                        align-items: center;
+                        justify-items: center;
+                        grid-template-columns: repeat(2, 1fr);
+                        height: 100%;
+                        width: 100%;
+                        position: relative;
+
+                        .frame {
+                            display: flex;
+                            align-items: top;
+                            justify-content: center;
+                            margin-top: -0.9rem;
+                            width: 20rem;
+                            height: 18rem;
+                            // background-color: red;
+                            border: 0.3rem solid rgba(255, 255, 255, 0.8);
+                            border-radius: 1rem;
+                            font-size: 10rem;
+                            color: rgba(255, 255, 255, 0.8);
+
+                            &:hover {
+                                color: rgba(255, 255, 255, 1);
+                                border: 0.3rem solid rgba(255, 255, 255, 1);;
                             }
                         }
                     }
@@ -211,6 +243,8 @@ body {
                         border: none;
                         border-radius: 0.9rem;
                         background-color: var(--BLUE);
+                        margin-bottom: 5.6rem;
+                        transition: all ease 0.3s;
                         
                         a {
                             color: #fff;
@@ -237,10 +271,58 @@ body {
                         }
                     }
                 }
+
+                .technologies {
+                    display: flex;
+                    width: 100%;
+
+                    .technology {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 3.2rem;
+                        width: 5.6rem;
+                        height: 5.6rem;
+                        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 200, 0.165)) var(--PURE-WHITE);
+                        border-radius: 50%;
+                        border: 0.2rem solid var(--LIGHT-BLUE);
+                        margin-left: -1.2rem;
+                        
+                    }
+
+                    .js {
+                        color: gold;
+                    }
+
+                    .nodejs {
+                        color: green;
+                    }
+
+                    .html5 {
+                        color: chocolate;
+                    }
+
+                    .css3 {
+                        color: royalblue;
+                    }
+
+                    .react {
+                        color: aqua;
+                    }
+
+                    .sass {
+                        color: #c69;
+                    }
+
+                    .docker {
+                        color: #2591e6
+                    }
+                }
     
             }
             
             .hero-img-box {
+                justify-content: center;
                 .hero-img {
                     width: 100%;
                 }
