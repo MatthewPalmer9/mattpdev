@@ -277,8 +277,8 @@ body .section-hero .hero .hero-interaction-box .box-container {
 body .section-hero .hero .hero-interaction-box .box-container:hover {
   -webkit-transform: translate(-1%, -1%) rotateX(15deg) rotateY(-15deg) rotateZ(4deg);
           transform: translate(-1%, -1%) rotateX(15deg) rotateY(-15deg) rotateZ(4deg);
-  -webkit-box-shadow: 3rem 2rem 3rem 0 rgba(0, 0, 0, 0.24);
-          box-shadow: 3rem 2rem 3rem 0 rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 3rem 3rem 3.2rem 0 rgba(0, 0, 0, 0.22);
+          box-shadow: 3rem 3rem 3.2rem 0 rgba(0, 0, 0, 0.22);
 }
 
 body .section-hero .hero .hero-interaction-box .box-container .navbar {
