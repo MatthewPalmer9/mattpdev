@@ -20,7 +20,7 @@ export default function Header() {
                         <a class="main-nav-link" href="/">Contact</a>
                     </li>
                     <li>
-                        <a class="main-nav-link nav-cta" href="/">
+                        <a target="_blank" rel="noreferrer" class="main-nav-link nav-cta" href="https://docs.google.com/document/d/12wxIOwUbB73DCBfDr88eU5zr6fRSz4whHWNun1hgeVs">
                             Resume
                             <div className="icon">
                                 <ion-icon name="download-outline"></ion-icon>
