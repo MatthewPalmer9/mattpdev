@@ -681,6 +681,8 @@ body .section-about .container .about-img-container::before {
   padding-bottom: 75%;
   background-color: rgba(34, 139, 230, 0.3);
   z-index: -2;
+  -webkit-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 body .section-about .container .about-img-container::after {
@@ -688,9 +690,22 @@ body .section-about .container .about-img-container::after {
   padding-bottom: 50%;
   z-index: -1;
   background-color: rgba(34, 139, 230, 0.6);
+  -webkit-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 body .section-about .container .about-img-container .about-img {
   width: 50%;
+  border-radius: 1rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+body .section-about .container .about-img-container .about-img:hover {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
 }
 /*# sourceMappingURL=index.css.map */

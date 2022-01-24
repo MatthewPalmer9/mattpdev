@@ -1,4 +1,4 @@
-import familyPhoto from './the-family.png';
+import familyPhoto from './the-family1.png';
 
 export default function About() {
     return (
@@ -7,6 +7,7 @@ export default function About() {
                 <p className="about-label">ABOUT</p>
                 <h2 className="heading-secondary">Who am I?</h2>
                 <div className="grid-two-cols mg-top center-v">
+                    {/* STEP 01 TEXT */}
                     <div className="about-text-container">
                         <p className="number">01</p>
                         <h3>First and Foremost &mdash; A Family Man!</h3>
@@ -15,8 +16,10 @@ export default function About() {
                             primary motivation in everything I do, and they are my drive to be better than I was yesterday.
                         </p>
                     </div>
+
+                    {/* STEP 01 IMAGE */}
                     <div className="about-img-container">
-                        <img className="about-img" src={familyPhoto} alt="" />
+                        <img className="about-img" src={familyPhoto} alt="Matt and his family" />
                     </div>
                 </div>
             </div>

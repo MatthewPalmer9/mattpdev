@@ -572,6 +572,7 @@ body {
                     padding-bottom: 75%;
                     background-color: rgba(34, 139, 230, 0.3);
                     z-index: -2;
+                    box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.1);
                 }
 
                 &::after {
@@ -579,10 +580,19 @@ body {
                     padding-bottom: 50%;
                     z-index: -1;
                     background-color: rgba(34, 139, 230, 0.6);
+                    box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.15);
                 }
                 
                 .about-img {
                     width: 50%;
+                    border-radius: 1rem;
+                    transition: all 0.3s;
+                    box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.1);
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: translateY(-5%);
+                    }
                 }
             }
         }
