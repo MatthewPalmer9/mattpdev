@@ -49,6 +49,10 @@ body {
         gap: 6.4rem;
     }
 
+    .row-gap {
+        row-gap: 20rem;
+    }
+
     .center-v {
         align-items: center;
     }
@@ -509,23 +513,23 @@ body {
     /* SECTION ABOUT */ 
     /****************/ 
     .section-about {
-        margin-top: 9.4rem;
+        margin-top: 9.6rem;
 
         .heading-secondary {
             font-size: 4.4rem;
-            // margin-bottom: 9.6rem;
+            margin-bottom: 10rem;
         }
 
         .container {
             max-width: 130rem;
             margin: 9.6rem auto;
-            padding: 0 3.2rem;
+            padding: 1.6rem 3.2rem;
 
             .about-label {
                 font-size: 1.6rem;
                 font-weight: 500;
                 color: var(--BLUE);
-                padding-top: 5.6rem;
+                padding-top: 3.6rem;
                 margin-bottom: 1.6rem;
                 letter-spacing: 0.75px;
             }
@@ -568,8 +572,8 @@ body {
                 }
 
                 &::before {
-                    width: 75%;
-                    padding-bottom: 75%;
+                    width: 65%;
+                    padding-bottom: 65%;
                     background-color: rgba(34, 139, 230, 0.3);
                     z-index: -2;
                     box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.1);

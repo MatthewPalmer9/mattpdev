@@ -61,6 +61,10 @@ body .grid-two-cols {
   gap: 6.4rem;
 }
 
+body .row-gap {
+  row-gap: 20rem;
+}
+
 body .center-v {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -613,24 +617,25 @@ body .section-hero .hero .hero-img-box .hero-img {
 }
 
 body .section-about {
-  margin-top: 9.4rem;
+  margin-top: 9.6rem;
 }
 
 body .section-about .heading-secondary {
   font-size: 4.4rem;
+  margin-bottom: 10rem;
 }
 
 body .section-about .container {
   max-width: 130rem;
   margin: 9.6rem auto;
-  padding: 0 3.2rem;
+  padding: 1.6rem 3.2rem;
 }
 
 body .section-about .container .about-label {
   font-size: 1.6rem;
   font-weight: 500;
   color: var(--BLUE);
-  padding-top: 5.6rem;
+  padding-top: 3.6rem;
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
 }
@@ -677,8 +682,8 @@ body .section-about .container .about-img-container::before, body .section-about
 }
 
 body .section-about .container .about-img-container::before {
-  width: 75%;
-  padding-bottom: 75%;
+  width: 65%;
+  padding-bottom: 65%;
   background-color: rgba(34, 139, 230, 0.3);
   z-index: -2;
   -webkit-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.1);
