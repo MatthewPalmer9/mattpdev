@@ -51,7 +51,7 @@ export default function SectionHero() {
                             <div className="brand">
                                 HOVER ME LLC
                             </div>
-                            <ul class="box-list">
+                            <ul className="box-list">
                                 <li className="box-list-item">.mattpdev()</li>
                                 <li className="box-list-item">.loves()</li>
                                 <li className="box-list-item">.to()</li>

@@ -8,19 +8,19 @@ export default function Header() {
             <nav className="main-nav">
                 <ul className="main-nav-list">
                     <li>
-                        <a class="main-nav-link" href="#about">About</a>
+                        <a className="main-nav-link" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="main-nav-link" href="/">Projects</a>
+                        <a className="main-nav-link" href="/">Projects</a>
                     </li>
                     <li>
-                        <a class="main-nav-link" href="/">Testimonials</a>
+                        <a className="main-nav-link" href="/">Testimonials</a>
                     </li>
                     <li>
-                        <a class="main-nav-link" href="/">Contact</a>
+                        <a className="main-nav-link" href="/">Contact</a>
                     </li>
                     <li>
-                        <a target="_blank" rel="noreferrer" class="main-nav-link nav-cta" href="https://docs.google.com/document/d/12wxIOwUbB73DCBfDr88eU5zr6fRSz4whHWNun1hgeVs">
+                        <a target="_blank" rel="noreferrer" className="main-nav-link nav-cta" href="https://docs.google.com/document/d/12wxIOwUbB73DCBfDr88eU5zr6fRSz4whHWNun1hgeVs">
                             Resume
                             <div className="icon">
                                 <ion-icon name="exit-outline"></ion-icon>

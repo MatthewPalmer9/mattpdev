@@ -631,6 +631,8 @@ body .section-about .container .about-label {
   font-weight: 500;
   color: var(--BLUE);
   padding-top: 5.6rem;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
 }
 
 body .section-about .container .about-text-container .number {
