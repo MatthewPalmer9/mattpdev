@@ -15,7 +15,7 @@ export default function SectionHero() {
                             <a href="/">Contact Me</a>
                         </button>
                         <button className="hero-btn cta">
-                            <a href="/">Learn more &darr;</a>
+                            <a href="#about">Learn more &darr;</a>
                         </button>
                     </div>
                     <div className="technologies">

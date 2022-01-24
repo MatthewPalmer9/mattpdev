@@ -22,6 +22,7 @@
 html {
   color: var(--GREY);
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -39,6 +40,9 @@ body {
   /*************************/
   /*** HERO SECTION ***/
   /*************************/
+  /******************/
+  /* SECTION ABOUT */
+  /****************/
 }
 
 body a {
@@ -47,6 +51,24 @@ body a {
 
 body ul {
   list-style: none;
+}
+
+body .grid-two-cols {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 6.4rem;
+}
+
+body .center-v {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .mg-top {
+  margin-top: 5.2rem;
 }
 
 body .color-red {
@@ -129,6 +151,10 @@ body .color-pink:hover {
   color: #ff47c8;
   background: -webkit-gradient(linear, right top, left top, from(rgba(255, 71, 200, 0.8)), to(rgba(0, 0, 0, 0.7))), rgba(255, 71, 200, 0.8) !important;
   background: linear-gradient(to left, rgba(255, 71, 200, 0.8), rgba(0, 0, 0, 0.7)), rgba(255, 71, 200, 0.8) !important;
+}
+
+body .heading-secondary {
+  font-size: 4.8rem;
 }
 
 body .header {
@@ -584,5 +610,85 @@ body .section-hero .hero .hero-img-box {
 
 body .section-hero .hero .hero-img-box .hero-img {
   width: 100%;
+}
+
+body .section-about {
+  margin-top: 9.4rem;
+}
+
+body .section-about .heading-secondary {
+  font-size: 4.4rem;
+}
+
+body .section-about .container {
+  max-width: 130rem;
+  margin: 9.6rem auto;
+  padding: 0 3.2rem;
+}
+
+body .section-about .container .about-label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--BLUE);
+  padding-top: 5.6rem;
+}
+
+body .section-about .container .about-text-container .number {
+  font-size: 8.6rem;
+  font-weight: 700;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+body .section-about .container .about-text-container h3 {
+  font-size: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+body .section-about .container .about-text-container .about-description {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+body .section-about .container .about-img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+body .section-about .container .about-img-container::before, body .section-about .container .about-img-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+body .section-about .container .about-img-container::before {
+  width: 75%;
+  padding-bottom: 75%;
+  background-color: rgba(34, 139, 230, 0.3);
+  z-index: -2;
+}
+
+body .section-about .container .about-img-container::after {
+  width: 50%;
+  padding-bottom: 50%;
+  z-index: -1;
+  background-color: rgba(34, 139, 230, 0.6);
+}
+
+body .section-about .container .about-img-container .about-img {
+  width: 50%;
 }
 /*# sourceMappingURL=index.css.map */
