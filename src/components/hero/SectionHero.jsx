@@ -1,6 +1,60 @@
-
+import React, { useEffect } from 'react';
 
 export default function SectionHero() {
+    useEffect(() => {
+        const sectionHeroEl = document.querySelector(".section-hero");
+        const header = document.querySelector(".header");
+
+        const obs = new IntersectionObserver(
+        function (entries) {
+            const ent = entries[0];
+            console.log(ent);
+
+            if (ent.isIntersecting === false) {
+            header.classList.add("sticky");
+            }
+
+            if (ent.isIntersecting === true) {
+            header.classList.remove("sticky");
+            }
+        },
+        {
+            // In the viewport
+            root: null,
+            threshold: 0,
+            rootMargin: "-80px",
+        }
+        );
+        obs.observe(sectionHeroEl);
+
+        // smooth scrolling
+        const allLinks = document.querySelectorAll("a:link");
+
+        allLinks.forEach(function (link) {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const href = link.getAttribute("href");
+
+            // Scroll back to top
+            if (href === "#top")
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+
+            // Scroll to other links
+            if (href !== "#top" && href.startsWith("#")) {
+            const sectionEl = document.querySelector(href);
+            sectionEl.scrollIntoView({ behavior: "smooth" });
+            }
+
+            // Close mobile naviagtion
+            if (link.classList.contains("main-nav-link"))
+            header.classList.toggle("nav-open");
+        });
+        });
+    }, []);
+
     return (
         <section className="section-hero">
             <div className="hero">
@@ -60,7 +114,7 @@ export default function SectionHero() {
                                 <li className="box-list-item">.layouts()</li>
                             </ul>
                         </div>
-                        <div className="container">
+                        <div className="inner-container">
                             <div className="frame">
                                 <ion-icon name="person-circle-outline"></ion-icon>
                                 <div className="description-lines">

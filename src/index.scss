@@ -21,7 +21,9 @@
 html {
     color: var(--GREY);
     font-size: 62.5%;
-    scroll-behavior: smooth;
+
+    // omitted since it doesn't work for all browsers
+    // scroll-behavior: smooth;
 }
 
 body {
@@ -43,14 +45,30 @@ body {
         list-style: none;
     }
 
-    .grid-two-cols {
+    .heading-tertiary {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .external-link {
+        font-weight: 600;
+        color: var(--BLUE);
+        border-bottom: 0.2rem dotted var(--BLUE);
+    }
+
+    .grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
         gap: 6.4rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid-two-cols {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .row-gap {
-        row-gap: 30rem;
+        row-gap: 15rem;
     }
 
     .center-v {
@@ -59,6 +77,23 @@ body {
 
     .mg-top {
         margin-top: 5.2rem;
+    }
+
+    .about-label {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var(--BLUE);
+        margin-bottom: 1.6rem;
+        letter-spacing: 0.75px;
+        padding-top: 9.6rem;
+    }
+
+    .label {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var(--BLUE);
+        margin-bottom: 1.6rem;
+        letter-spacing: 0.75px;
     }
 
     .color-red {
@@ -131,11 +166,33 @@ body {
     .heading-secondary {
         font-size: 4.8rem;
     }
+
+    .heading-description {
+        font-size: 1.8rem;
+        line-height: 1.8;
+    }
+
+    .container {
+        max-width: 120rem;
+        margin: 9.6rem auto;
+        padding: 1.6rem 3.2rem;
+    }
     
     
     /*************************/
     /*** MAIN HEADER ***/
     /*************************/
+
+    .sticky {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.98) !important;
+        box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.05);
+        // opacity: 0;
+    }
+
+
     .header {
         display: flex;
         align-items: center;
@@ -143,6 +200,7 @@ body {
         padding: 0 4.8rem;
         height: 9.6rem;
         background-color: var(--LIGHT-BLUE);
+        z-index: 200;
     
         .brand {
             display: flex;
@@ -216,7 +274,9 @@ body {
     
     .section-hero {
         background-color: var(--LIGHT-BLUE);
-        padding: 12rem 0 9.6rem 0;
+        padding: 12rem 0 16rem 0;
+        z-index: 100;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
     
         .hero {
             display: grid;
@@ -283,7 +343,7 @@ body {
                         }
                     }
 
-                    .container {
+                    .inner-container {
                         display: grid;
                         align-items: center;
                         justify-items: center;
@@ -513,6 +573,7 @@ body {
     /* SECTION ABOUT */ 
     /****************/ 
     .section-about {
+        padding-top: 3.2rem;
         margin-top: 9.6rem;
 
         .heading-secondary {
@@ -525,15 +586,6 @@ body {
             margin: 9.6rem auto;
             padding: 1.6rem 3.2rem;
 
-            .about-label {
-                font-size: 1.6rem;
-                font-weight: 500;
-                color: var(--BLUE);
-                padding-top: 3.6rem;
-                margin-bottom: 1.6rem;
-                letter-spacing: 0.75px;
-            }
-
             .about-text-container {
                 
 
@@ -544,15 +596,6 @@ body {
                     margin-bottom: 1.2rem;
                 }
 
-                h3 {
-                    font-size: 3rem;
-                    margin-bottom: 3.2rem;
-                }
-
-                .about-description {
-                    font-size: 1.8rem;
-                    line-height: 1.8;
-                }
             }
 
             .about-img-container {
@@ -572,23 +615,23 @@ body {
                 }
 
                 &::before {
-                    width: 85%;
-                    padding-bottom: 85%;
+                    width: 90%;
+                    padding-bottom: 65%;
                     background-color: rgba(34, 139, 230, 0.3);
                     z-index: -2;
                     box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.1);
                 }
 
                 &::after {
-                    width: 65%;
-                    padding-bottom: 65%;
+                    width: 75%;
+                    padding-bottom: 50%;
                     z-index: -1;
                     background-color: rgba(34, 139, 230, 0.6);
                     box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.15);
                 }
                 
                 .about-img {
-                    width: 65%;
+                    width: 60%;
                     border-radius: 1rem;
                     transition: all 0.3s;
                     box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.1);
@@ -598,6 +641,24 @@ body {
                         transform: translateY(-5%);
                     }
                 }
+            }
+        }
+    }
+
+    /***********************/ 
+    /* SECTION EXPERIENCE */ 
+    /*********************/ 
+    .section-experience {
+        padding-top: 1.6rem;
+
+        .heading-secondary {
+            font-size: 4.4rem;
+            margin-bottom: 10rem;
+        }
+
+        .experience-img-box {
+            .experience-img {
+                width: 100%;
             }
         }
     }

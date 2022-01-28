@@ -1,14 +1,21 @@
+import React from 'react';
+
 export default function Header() {
+
+    
     return (
         <header className="header">
             <div className="brand">
-                <a href="/">Matt<span className="brand-p">P</span>Dev</a>
+                <a href="#top">Matt<span className="brand-p">P</span>Dev</a>
                 <ion-icon className="brand-icon" name="code-slash"></ion-icon>
             </div>
             <nav className="main-nav">
                 <ul className="main-nav-list">
                     <li>
                         <a className="main-nav-link" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a className="main-nav-link" href="#experience">Experience</a>
                     </li>
                     <li>
                         <a className="main-nav-link" href="/">Projects</a>
