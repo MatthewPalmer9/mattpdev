@@ -56,6 +56,12 @@ body ul {
 }
 
 body .heading-tertiary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 3rem;
   margin-bottom: 3rem;
 }
@@ -97,20 +103,12 @@ body .mg-top {
   margin-top: 5.2rem;
 }
 
-body .about-label {
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: var(--BLUE);
-  margin-bottom: 1.6rem;
-  letter-spacing: 0.75px;
-  padding-top: 9.6rem;
-}
-
 body .label {
   font-size: 1.6rem;
   font-weight: 500;
   color: var(--BLUE);
   margin-bottom: 1.6rem;
+  margin-top: 3.2rem;
   letter-spacing: 0.75px;
 }
 
@@ -207,19 +205,14 @@ body .heading-description {
 
 body .container {
   max-width: 120rem;
-  margin: 9.6rem auto;
-  padding: 1.6rem 3.2rem;
+  margin: 0 auto;
+  padding: 10rem 0 15rem 0;
 }
 
 body .sticky {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.98) !important;
-  -webkit-box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.05);
-          box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.05) !important;
+          box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.05) !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
 }
 
 body .header {
@@ -236,6 +229,12 @@ body .header {
   height: 9.6rem;
   background-color: var(--LIGHT-BLUE);
   z-index: 200;
+  position: fixed;
+  width: 100%;
+  -webkit-box-shadow: 0 20px 30px rgba(231, 245, 255, 0.05);
+          box-shadow: 0 20px 30px rgba(231, 245, 255, 0.05);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 body .header .brand {
@@ -321,10 +320,10 @@ body .header .main-nav .main-nav-list li .nav-cta .icon {
 
 body .section-hero {
   background-color: var(--LIGHT-BLUE);
-  padding: 12rem 0 16rem 0;
+  padding: 20rem 0 5rem 0;
   z-index: 100;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
 }
 
 body .section-hero .hero {
@@ -621,6 +620,7 @@ body .section-hero .hero .hero-text-box .technologies {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  padding-bottom: 10rem;
 }
 
 body .section-hero .hero .hero-text-box .technologies .technology {
@@ -682,8 +682,7 @@ body .section-hero .hero .hero-img-box .hero-img {
 }
 
 body .section-about {
-  padding-top: 3.2rem;
-  margin-top: 9.6rem;
+  margin-top: 4.4rem;
 }
 
 body .section-about .heading-secondary {
@@ -691,20 +690,14 @@ body .section-about .heading-secondary {
   margin-bottom: 10rem;
 }
 
-body .section-about .container {
-  max-width: 120rem;
-  margin: 9.6rem auto;
-  padding: 1.6rem 3.2rem;
-}
-
-body .section-about .container .about-text-container .number {
+body .section-about .about-text-container .number {
   font-size: 8.6rem;
   font-weight: 700;
   color: #ddd;
   margin-bottom: 1.2rem;
 }
 
-body .section-about .container .about-img-container {
+body .section-about .about-img-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -717,7 +710,7 @@ body .section-about .container .about-img-container {
   position: relative;
 }
 
-body .section-about .container .about-img-container::before, body .section-about .container .about-img-container::after {
+body .section-about .about-img-container::before, body .section-about .about-img-container::after {
   content: "";
   display: block;
   position: absolute;
@@ -728,7 +721,7 @@ body .section-about .container .about-img-container::before, body .section-about
   border-radius: 50%;
 }
 
-body .section-about .container .about-img-container::before {
+body .section-about .about-img-container::before {
   width: 90%;
   padding-bottom: 65%;
   background-color: rgba(34, 139, 230, 0.3);
@@ -737,7 +730,7 @@ body .section-about .container .about-img-container::before {
           box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-body .section-about .container .about-img-container::after {
+body .section-about .about-img-container::after {
   width: 75%;
   padding-bottom: 50%;
   z-index: -1;
@@ -746,7 +739,7 @@ body .section-about .container .about-img-container::after {
           box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-body .section-about .container .about-img-container .about-img {
+body .section-about .about-img-container .about-img {
   width: 60%;
   border-radius: 1rem;
   -webkit-transition: all 0.3s;
@@ -756,18 +749,64 @@ body .section-about .container .about-img-container .about-img {
   cursor: pointer;
 }
 
-body .section-about .container .about-img-container .about-img:hover {
+body .section-about .about-img-container .about-img:hover {
   -webkit-transform: translateY(-5%);
           transform: translateY(-5%);
 }
 
 body .section-experience {
   padding-top: 1.6rem;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(28, 126, 214, 0.4)), to(rgba(255, 255, 255, 0.5)));
+  background: linear-gradient(to right bottom, rgba(28, 126, 214, 0.4), rgba(255, 255, 255, 0.5));
+  -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+}
+
+body .section-experience .track--dot::after {
+  content: '';
+  display: block;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  left: -3.5rem;
+  background-color: var(--BLUE);
+  border-radius: 50%;
+}
+
+body .section-experience .tracker-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(-5rem);
+          transform: translateX(-5rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 4rem;
+  height: 100%;
+}
+
+body .section-experience .tracker-container .track {
+  width: 0.2rem;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(#1c7ed6), to(transparent));
+  background: linear-gradient(to top, transparent, #1c7ed6, transparent);
 }
 
 body .section-experience .heading-secondary {
   font-size: 4.4rem;
   margin-bottom: 10rem;
+}
+
+body .section-experience .experience-text {
+  position: relative;
 }
 
 body .section-experience .experience-img-box .experience-img {

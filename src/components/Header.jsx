@@ -4,7 +4,7 @@ export default function Header() {
 
     
     return (
-        <header className="header">
+        <header className="header sticky">
             <div className="brand">
                 <a href="#top">Matt<span className="brand-p">P</span>Dev</a>
                 <ion-icon className="brand-icon" name="code-slash"></ion-icon>
