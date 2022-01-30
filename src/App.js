@@ -63,13 +63,13 @@ function App() {
     <>
       <div className="wrap">
         <div className="shadow">
-          <a href="#" className="social-link linkedin">
+          <a href="https://linkedin.com/in/mattpdev" className="social-link linkedin">
             <ion-icon className="social-icon" name="logo-linkedin"></ion-icon>
           </a>
-          <a href="#" className="social-link twitter">
+          <a href="https://twitter.com/mattpdev" className="social-link twitter">
             <ion-icon className="social-icon" name="logo-twitter"></ion-icon>
           </a>
-          <a href="#" className="social-link github">
+          <a href="https://github.com/matthewpalmer9" className="social-link github">
             <ion-icon name="logo-github"></ion-icon>
           </a>
         </div>
