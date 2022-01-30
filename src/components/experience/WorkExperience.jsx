@@ -14,7 +14,7 @@ export default function WorkExperience() {
                 <div className="grid grid-two-cols">
                     <div className="tracker-container">
                         <div className="track">
-
+                            
                         </div>
                     </div>
                     {/* EXPERIENCE IBM */}

@@ -61,6 +61,19 @@ function App() {
   }, []);
   return (
     <>
+      <div className="wrap">
+        <div className="shadow">
+          <a href="#" className="social-link linkedin">
+            <ion-icon className="social-icon" name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="#" className="social-link twitter">
+            <ion-icon className="social-icon" name="logo-twitter"></ion-icon>
+          </a>
+          <a href="#" className="social-link github">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </div>
+      </div>
       <Header />
       <Main />
       <About />

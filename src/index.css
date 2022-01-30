@@ -22,6 +22,61 @@
 html {
   color: var(--GREY);
   font-size: 62.5%;
+  position: relative;
+}
+
+html .wrap {
+  position: fixed;
+  bottom: 50%;
+  right: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-filter: drop-shadow(0 2rem 3rem rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0 2rem 3rem rgba(0, 0, 0, 0.2));
+  z-index: 100;
+}
+
+html .wrap .shadow {
+  background-color: rgba(255, 255, 255, 0.95);
+  background: -webkit-gradient(linear, right bottom, left top, from(rgba(0, 0, 0, 0.05)), to(white));
+  background: linear-gradient(to left top, rgba(0, 0, 0, 0.05), white);
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto 0;
+  width: 100%;
+  height: 100%;
+  padding: 3rem 1.5rem;
+  font-size: 3.2rem;
+  z-index: 200;
+}
+
+html .wrap .shadow .social-link:link, html .wrap .shadow .social-link:visited {
+  padding: 0.8rem 0;
+}
+
+html .wrap .shadow .linkedin {
+  color: #0866c2;
+}
+
+html .wrap .shadow .twitter {
+  color: #1DA1F2;
+}
+
+html .wrap .shadow .github {
+  color: #000;
 }
 
 body {
