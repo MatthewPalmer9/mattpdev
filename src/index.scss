@@ -30,12 +30,12 @@ html {
         bottom: 50%;
         right: 0;
         transform: translateY(50%);
-        filter: drop-shadow(0 2rem 3rem rgba(0, 0, 0, 0.2));
+        filter: drop-shadow(-0.03rem 0rem 0rem rgb(116, 151, 219));
         z-index: 100;
         
         .shadow {
             background-color: rgba(255, 255, 255, 0.95);
-            background: linear-gradient(to left top, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 1));
+            background: linear-gradient(to left top, rgba(50, 100, 200, 0.1), rgba(255, 255, 255, 1));
             clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
             display: flex;
             flex-direction: column;
@@ -112,6 +112,10 @@ body {
 
     .grid-two-cols {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-three-cols {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .row-gap {
@@ -340,7 +344,6 @@ body {
                     background-color: var(--BLUE);
                     background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)) var(--BLUE);
                     transform-style: preserve-3d;
-                    // transform: rotateX(18deg) rotateY(-6deg) scale(1);
                     transform: rotateX(15deg) rotateY(-15deg) rotateZ(4deg);
                     box-shadow: 2rem 2rem 3rem 0 rgba(0, 0, 0, 0.3);
                     overflow: hidden;
@@ -685,7 +688,7 @@ body {
         padding-top: 1.6rem;
         position: relative;
         background: linear-gradient(to right bottom, rgba(28, 126, 214, 0.4), rgba(255, 255, 255, 0.5));
-        clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
 
         .track--dot::after {
             content: '';
@@ -729,6 +732,58 @@ body {
         .experience-img-box {
             .experience-img {
                 width: 100%;
+            }
+        }
+    }
+
+    /*********************/ 
+    /* SECTION PROJECTS */ 
+    /*******************/
+
+    .section-projects {
+        .project-link {
+            text-decoration: none;
+            color: var(--GREY);
+        }
+
+        .project-card {
+            margin-top: 4.4rem;
+            perspective: 100rem;
+            padding: 1.6rem 3.2rem;
+            box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.1);
+            border-radius: 1rem;
+            // background: linear-gradient(to bottom left, rgba(0, 0, 0, 0.05), white);
+            .project-img {
+                width: 100%;
+                transform-style: preserve-3d;
+                transform: rotateX(15deg) rotateY(-15deg) rotateZ(4deg);
+                box-shadow: 2rem 1.5rem 3rem 0 rgba(0, 0, 0, 0.15);
+                margin-bottom: 3.6rem;
+                transition: all 0.3s;
+                border-radius: 0.5rem;
+
+                &:hover {
+                    transform: translate(-1%,-1%) rotateX(15deg) rotateY(-15deg) rotateZ(4deg);
+                    box-shadow: 3rem 2rem 3rem 0 rgba(0, 0, 0, 0.10);
+                }
+            }
+
+            .project-info {
+
+                .project-type {
+                    font-size: 1.1rem;
+                    color: var(--BLUE);
+                }
+
+                .project-title {
+                    font-size: 3.2rem;
+                    margin-bottom: 1.2rem;
+                }
+
+                .project-text {
+                    font-size: 1.6rem;
+                    line-height: 1.6;
+                }
             }
         }
     }

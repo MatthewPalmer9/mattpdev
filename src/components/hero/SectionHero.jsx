@@ -13,7 +13,7 @@ export default function SectionHero() {
                     </p>
                     <div className="hero-btns">
                         <button className="hero-btn">
-                            <a href="/">Contact Me</a>
+                            <a href="#contact">Contact Me</a>
                         </button>
                         <button className="hero-btn cta">
                             <a href="#about">Learn more &darr;</a>

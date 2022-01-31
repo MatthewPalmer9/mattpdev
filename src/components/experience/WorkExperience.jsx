@@ -6,7 +6,6 @@ export default function WorkExperience() {
     return (
         <section className="section-experience" id="experience">
             <div className="container">
-                {/* TRACK */}
                 <p className="label">EXPERIENCE</p>
                 <h2 className="heading-secondary">
                     Where have I worked?
@@ -14,7 +13,7 @@ export default function WorkExperience() {
                 <div className="grid grid-two-cols">
                     <div className="tracker-container">
                         <div className="track">
-                            
+
                         </div>
                     </div>
                     {/* EXPERIENCE IBM */}

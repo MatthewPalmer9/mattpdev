@@ -3,6 +3,7 @@ import About from './components/about/About.jsx';
 import WorkExperience from './components/experience/WorkExperience.jsx';
 import Header from './components/Header.jsx';
 import Main from './components/Main.jsx';
+import Projects from './components/projects/Projects.jsx';
 
 function App() {
 
@@ -37,8 +38,10 @@ function App() {
 
         allLinks.forEach(function (link) {
         link.addEventListener("click", function (e) {
-            e.preventDefault();
             const href = link.getAttribute("href");
+            if(href.startsWith("#")) {
+              e.preventDefault();
+            }
 
             // Scroll back to top
             if (href === "#top")
@@ -63,21 +66,23 @@ function App() {
     <>
       <div className="wrap">
         <div className="shadow">
-          <a href="https://linkedin.com/in/mattpdev" className="social-link linkedin">
+          <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/mattpdev" className="social-link linkedin">
             <ion-icon className="social-icon" name="logo-linkedin"></ion-icon>
           </a>
-          <a href="https://twitter.com/mattpdev" className="social-link twitter">
+          <a target="_blank" rel="noreferrer" href="https://twitter.com/mattpdev" className="social-link twitter">
             <ion-icon className="social-icon" name="logo-twitter"></ion-icon>
           </a>
-          <a href="https://github.com/matthewpalmer9" className="social-link github">
+          <a target="_blank" rel="noreferrer" href="https://github.com/matthewpalmer9" className="social-link github">
             <ion-icon name="logo-github"></ion-icon>
           </a>
         </div>
       </div>
+
       <Header />
       <Main />
       <About />
       <WorkExperience />
+      <Projects />
     </>
   );
 }

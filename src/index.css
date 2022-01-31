@@ -31,15 +31,15 @@ html .wrap {
   right: 0;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
-  -webkit-filter: drop-shadow(0 2rem 3rem rgba(0, 0, 0, 0.2));
-          filter: drop-shadow(0 2rem 3rem rgba(0, 0, 0, 0.2));
+  -webkit-filter: drop-shadow(-0.03rem 0rem 0rem #7497db);
+          filter: drop-shadow(-0.03rem 0rem 0rem #7497db);
   z-index: 100;
 }
 
 html .wrap .shadow {
   background-color: rgba(255, 255, 255, 0.95);
-  background: -webkit-gradient(linear, right bottom, left top, from(rgba(0, 0, 0, 0.05)), to(white));
-  background: linear-gradient(to left top, rgba(0, 0, 0, 0.05), white);
+  background: -webkit-gradient(linear, right bottom, left top, from(rgba(50, 100, 200, 0.1)), to(white));
+  background: linear-gradient(to left top, rgba(50, 100, 200, 0.1), white);
   -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
           clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
   display: -webkit-box;
@@ -100,6 +100,9 @@ body {
   /***********************/
   /* SECTION EXPERIENCE */
   /*********************/
+  /*********************/
+  /* SECTION PROJECTS */
+  /*******************/
 }
 
 body a {
@@ -142,6 +145,11 @@ body .grid {
 body .grid-two-cols {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+}
+
+body .grid-three-cols {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 
 body .row-gap {
@@ -814,8 +822,8 @@ body .section-experience {
   position: relative;
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(28, 126, 214, 0.4)), to(rgba(255, 255, 255, 0.5)));
   background: linear-gradient(to right bottom, rgba(28, 126, 214, 0.4), rgba(255, 255, 255, 0.5));
-  -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
+          clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
 }
 
 body .section-experience .track--dot::after {
@@ -866,5 +874,56 @@ body .section-experience .experience-text {
 
 body .section-experience .experience-img-box .experience-img {
   width: 100%;
+}
+
+body .section-projects .project-link {
+  text-decoration: none;
+  color: var(--GREY);
+}
+
+body .section-projects .project-card {
+  margin-top: 4.4rem;
+  -webkit-perspective: 100rem;
+          perspective: 100rem;
+  padding: 1.6rem 3.2rem;
+  -webkit-box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+body .section-projects .project-card .project-img {
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(15deg) rotateY(-15deg) rotateZ(4deg);
+          transform: rotateX(15deg) rotateY(-15deg) rotateZ(4deg);
+  -webkit-box-shadow: 2rem 1.5rem 3rem 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 2rem 1.5rem 3rem 0 rgba(0, 0, 0, 0.15);
+  margin-bottom: 3.6rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 0.5rem;
+}
+
+body .section-projects .project-card .project-img:hover {
+  -webkit-transform: translate(-1%, -1%) rotateX(15deg) rotateY(-15deg) rotateZ(4deg);
+          transform: translate(-1%, -1%) rotateX(15deg) rotateY(-15deg) rotateZ(4deg);
+  -webkit-box-shadow: 3rem 2rem 3rem 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 3rem 2rem 3rem 0 rgba(0, 0, 0, 0.1);
+}
+
+body .section-projects .project-card .project-info .project-type {
+  font-size: 1.1rem;
+  color: var(--BLUE);
+}
+
+body .section-projects .project-card .project-info .project-title {
+  font-size: 3.2rem;
+  margin-bottom: 1.2rem;
+}
+
+body .section-projects .project-card .project-info .project-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
 }
 /*# sourceMappingURL=index.css.map */
