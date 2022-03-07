@@ -27,7 +27,7 @@ export default function Header() {
                         <a className="main-nav-link" href="/">Contact</a>
                     </li>
                     <li>
-                        <a target="_blank" rel="noreferrer" className="main-nav-link nav-cta" href="https://docs.google.com/document/d/12wxIOwUbB73DCBfDr88eU5zr6fRSz4whHWNun1hgeVs">
+                        <a target="_blank" rel="noreferrer" className="main-nav-link nav-cta" href="https://docs.google.com/document/d/1yuXgihAsPcb3lwrUAWItfwbs_Se54S_Hr8WxQ7irF40">
                             Resume
                             <div className="icon">
                                 <ion-icon name="exit-outline"></ion-icon>
