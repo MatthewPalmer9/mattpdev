@@ -13,8 +13,7 @@ export default function About() {
                         <p className="number">01</p>
                         <h3 className="heading-tertiary">First &amp; Foremost &mdash; A Family Man!</h3>
                         <p className="heading-description">
-                            I am a husband and a father to a beautiful 2-year-old girl, and soon a newborn! My wife and kids are my 
-                            primary motivation in everything I do, and they are my drive to be better than I was yesterday.
+                            I am a husband and a father to a beautiful 2-year-old girl, and recently a newborn! My wife and kids are my primary motivation in everything I do, and they are my drive to be better than I was yesterday.
                         </p>
                     </div>
 

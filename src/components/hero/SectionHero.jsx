@@ -17,32 +17,6 @@ export default function SectionHero() {
                             <a href="#about">Learn more &darr;</a>
                         </button>
                     </div>
-                    <div className="technologies">
-                        <div className="technology js">
-                            <ion-icon name="logo-javascript"></ion-icon>
-                        </div>
-                        <div className="technology nodejs">
-                            <ion-icon name="logo-nodejs"></ion-icon>
-                        </div>
-                        <div className="technology html5">
-                            <ion-icon name="logo-html5"></ion-icon>
-                        </div>
-                        <div className="technology css3">
-                            <ion-icon name="logo-css3"></ion-icon>
-                        </div>
-                        <div className="technology react">
-                            <ion-icon name="logo-react"></ion-icon>
-                        </div>
-                        <div className="technology sass">
-                            <ion-icon name="logo-sass"></ion-icon>
-                        </div>
-                        <div className="technology docker">
-                            <ion-icon name="logo-docker"></ion-icon>
-                        </div>
-                        <div className="technology">
-                            <ion-icon name="logo-github"></ion-icon>
-                        </div>
-                    </div>
                 </div>
                 <div className="hero-interaction-box">
                     <div className="box-container">

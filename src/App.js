@@ -4,6 +4,7 @@ import WorkExperience from './components/experience/WorkExperience.jsx';
 import Header from './components/header/Header.jsx';
 import Main from './components/main/Main.jsx';
 import Projects from './components/projects/Projects.jsx';
+import Testimonials from './components/testimonials/Testimonials.jsx';
 
 function App() {
   useLayoutEffect(() => {
@@ -82,6 +83,7 @@ function App() {
       <About />
       <WorkExperience />
       <Projects />
+      <Testimonials />
     </>
   );
 }

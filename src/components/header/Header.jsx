@@ -17,7 +17,7 @@ export default function Header() {
                         <a className="main-nav-link" href="#projects">Projects</a>
                     </li>
                     <li>
-                        <a className="main-nav-link" href="/">Testimonials</a>
+                        <a className="main-nav-link" href="#testimonials">Testimonials</a>
                     </li>
                     <li>
                         <a className="main-nav-link" href="/">Contact</a>

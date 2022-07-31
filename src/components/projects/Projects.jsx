@@ -7,12 +7,11 @@ export default function Projects() {
                 <p className="label">PROJECTS</p>
                 <h2 className="heading-secondary">What have I built?</h2>
                 <div className="grid grid-three-cols">
-                    {/* OMNIFOOD */}
                     <ProjectCard 
                         link={"https://quirky-jennings-58c09b.netlify.app/"}
-                        imgSrc={"/img/omnifood.PNG"}
-                        title={"Omnifood"}
-                        description={"A fake, AI-powered food subscription and delivery business that aims to make eating healthy convenient, effortless and automated."}
+                        imgSrc={"/img/website-thumbnail.PNG"}
+                        title={"MattPDev"}
+                        description={"Let's start here! This portfolio, and all of my projects here, are not built with some easy framework like Bootstrap. This website is designed from scratch!"}
                     />
                     <ProjectCard 
                         link={"https://quirky-jennings-58c09b.netlify.app/"}
@@ -21,10 +20,10 @@ export default function Projects() {
                         description={"A fake, AI-powered food subscription and delivery business that aims to make eating healthy convenient, effortless and automated."}
                     />
                     <ProjectCard 
-                        link={"https://quirky-jennings-58c09b.netlify.app/"}
-                        imgSrc={"/img/omnifood.PNG"}
-                        title={"Omnifood"}
-                        description={"A fake, AI-powered food subscription and delivery business that aims to make eating healthy convenient, effortless and automated."}
+                        link={"https://grand-hotel-silk.vercel.app/"}
+                        imgSrc={"/img/grand-hotel.PNG"}
+                        title={"Grand Hotel"}
+                        description={"A pseudo-luxurious hotel service that aims help to anyone achieve the most absolute royal experience they are looking for... Of course, for a price!"}
                     />
                 </div>
             </div>
