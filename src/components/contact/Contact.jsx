@@ -1,6 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 export default function Contact() {
+  const [contactForm, setContactForm] = useState({
+    firstName: null,
+    email: null,
+    message: null
+  })
+
+  const handleChange = (e) => {
+    setContactForm(
+      {...contactForm, [e.target.name]: e.target.value.split(" ")[0]}
+    );
+    console.log(contactForm)
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    emailjs.init("user_PhaHB3scWG4p7Nv7oXhNL");
+    const response = await emailjs.send(
+      'outlook',
+      'template_hbRIh0S4',
+      contactForm
+    );
+    const data = await response.json();
+    console.log(data);
+  };
+
   return (
     <section id="contact" className="contact">
       <div className="container">
@@ -11,20 +37,20 @@ export default function Contact() {
         </h2>
         
         <form className="contact-form">
-          <h3></h3>
+          <h3 className="contact-heading">Contact Me</h3>
           <div className="input-field">
               <input
-                  // onChange={handleChange}
-                  name="name"
+                  onChange={handleChange}
+                  name="firstName"
                   type="text"
-                  placeholder="Email"
+                  placeholder="Name"
               />
               <label htmlFor="name">Name:</label>
           </div>
 
           <div className="input-field">
               <input
-                  // onChange={handleChange}
+                  onChange={handleChange}
                   name="email"
                   type="email"
                   placeholder="Email"
@@ -34,6 +60,7 @@ export default function Contact() {
 
           <div className="input-field">
             <textarea
+              onChange={handleChange}
               className="text-field" 
               name="Contact Details"
               placeholder="Type your message here..."
@@ -42,7 +69,7 @@ export default function Contact() {
 
 
           <div className="form-submit-box">
-              <button onClick={(e) => {e.preventDefault()}} className="submit-button">
+              <button onClick={handleSubmit} className="submit-button">
                 Send 
                 <ion-icon name="paper-plane-outline"></ion-icon>
               </button>

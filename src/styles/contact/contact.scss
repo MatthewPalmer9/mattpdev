@@ -12,6 +12,11 @@
   width: 66rem;
   margin: 6.6rem auto 0 auto;
 
+  .contact-heading {
+    font-size: 3.2rem;
+    color: var(--PURE-WHITE);
+  }
+
   .input-field {
     position: relative;
   }
@@ -71,6 +76,7 @@
     outline: none;
     transition: all 0.5s;
     padding: 1rem;
+    font-weight: 500;
   
     &:focus {
       border-color: var(--DARKER-BLUE);

@@ -13,6 +13,10 @@
   width: 66rem;
   margin: 6.6rem auto 0 auto;
 }
+.contact-form .contact-heading {
+  font-size: 3.2rem;
+  color: var(--PURE-WHITE);
+}
 .contact-form .input-field {
   position: relative;
 }
@@ -77,6 +81,7 @@
   outline: none;
   transition: all 0.5s;
   padding: 1rem;
+  font-weight: 500;
 }
 .contact-form .text-field:focus {
   border-color: var(--DARKER-BLUE);
