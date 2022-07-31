@@ -1,8 +1,4 @@
-import React from 'react';
-
-export default function Header() {
-
-    
+export default function Header() { 
     return (
         <header className="header sticky">
             <div className="brand">
@@ -27,7 +23,7 @@ export default function Header() {
                         <a className="main-nav-link" href="/">Contact</a>
                     </li>
                     <li>
-                        <a target="_blank" rel="noreferrer" className="main-nav-link nav-cta" href="https://docs.google.com/document/d/1yuXgihAsPcb3lwrUAWItfwbs_Se54S_Hr8WxQ7irF40">
+                        <a target="_blank" rel="noreferrer" className="main-nav-link nav-cta" href="https://docs.google.com/document/d/1-4BHZ96uD8QJ2SkTX21MXHgcdytroYjalObEu8Azp_o">
                             Resume
                             <div className="icon">
                                 <ion-icon name="exit-outline"></ion-icon>

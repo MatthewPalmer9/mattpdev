@@ -1,0 +1,55 @@
+/******************/
+/* SECTION ABOUT */
+/****************/
+.section-about {
+  margin-top: 4.4rem;
+}
+.section-about .heading-secondary {
+  font-size: 4.4rem;
+  margin-bottom: 10rem;
+}
+.section-about .about-text-container .number {
+  font-size: 8.6rem;
+  font-weight: 700;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+.section-about .about-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.section-about .about-img-container::before, .section-about .about-img-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.section-about .about-img-container::before {
+  width: 90%;
+  padding-bottom: 65%;
+  background-color: rgba(34, 139, 230, 0.3);
+  z-index: -2;
+  box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.1);
+}
+.section-about .about-img-container::after {
+  width: 75%;
+  padding-bottom: 50%;
+  z-index: -1;
+  background-color: rgba(34, 139, 230, 0.6);
+  box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.15);
+}
+.section-about .about-img-container .about-img {
+  width: 60%;
+  border-radius: 1rem;
+  transition: all 0.3s;
+  box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.section-about .about-img-container .about-img:hover {
+  transform: translateY(-5%);
+}/*# sourceMappingURL=about.css.map */

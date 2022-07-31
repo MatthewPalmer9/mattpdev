@@ -1,7 +1,4 @@
-import React from 'react';
-
 export default function SectionHero() {
-
     return (
         <section className="section-hero">
             <div className="hero">
@@ -10,6 +7,7 @@ export default function SectionHero() {
                     <p className="hero-description">
                         The best way to <strong>get things done</strong> is with 
                         a reliable team you can count on, and I would be delighted to be <strong>part of yours.</strong>
+                        
                     </p>
                     <div className="hero-btns">
                         <button className="hero-btn">

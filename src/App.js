@@ -1,12 +1,11 @@
 import React, { useLayoutEffect } from 'react';
 import About from './components/about/About.jsx';
 import WorkExperience from './components/experience/WorkExperience.jsx';
-import Header from './components/Header.jsx';
-import Main from './components/Main.jsx';
+import Header from './components/header/Header.jsx';
+import Main from './components/main/Main.jsx';
 import Projects from './components/projects/Projects.jsx';
 
 function App() {
-
   useLayoutEffect(() => {
     const sectionHeroEl = document.querySelector(".section-hero");
         const header = document.querySelector(".header");

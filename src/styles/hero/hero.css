@@ -1,0 +1,309 @@
+.color-red {
+  transition: ease-in-out 0.5s;
+}
+.color-red:hover {
+  background: linear-gradient(to left, rgba(224, 49, 49, 0.8), rgba(0, 0, 0, 0.7)) #e03131 !important;
+}
+
+.color-orange {
+  transition: ease-in-out 0.5s;
+}
+.color-orange:hover {
+  background: linear-gradient(to left, rgba(232, 89, 12, 0.8), rgba(0, 0, 0, 0.7)), rgba(232, 89, 12, 0.8) !important;
+}
+
+.color-yellow {
+  transition: ease-in-out 0.5s;
+}
+.color-yellow:hover {
+  background: linear-gradient(to left, rgba(252, 196, 25, 0.8), rgba(0, 0, 0, 0.7)), rgba(252, 196, 25, 0.8) !important;
+}
+
+.color-green {
+  transition: ease-in-out 0.5s;
+}
+.color-green:hover {
+  background: linear-gradient(to left, rgba(47, 158, 68, 0.8), rgba(0, 0, 0, 0.7)), rgba(47, 158, 68, 0.8) !important;
+}
+
+.color-blue {
+  transition: ease-in-out 0.5s;
+}
+.color-blue:hover {
+  background: linear-gradient(to left, rgba(25, 113, 194, 0.8), rgba(0, 0, 0, 0.7)), rgba(25, 113, 194, 0.8) !important;
+}
+
+.color-purple {
+  transition: ease-in-out 0.5s;
+}
+.color-purple:hover {
+  background: linear-gradient(to left, rgba(156, 54, 181, 0.8), rgba(0, 0, 0, 0.7)), rgba(156, 54, 181, 0.8) !important;
+}
+
+.color-violet {
+  transition: ease-in-out 0.5s;
+}
+.color-violet:hover {
+  color: rgba(214, 51, 108, 0.8);
+  background: linear-gradient(to left, rgba(214, 51, 108, 0.8), rgba(0, 0, 0, 0.7)), rgba(214, 51, 108, 0.8) !important;
+}
+
+.color-pink {
+  transition: ease-in-out 0.5s;
+}
+.color-pink:hover {
+  color: rgb(255, 71, 200);
+  background: linear-gradient(to left, rgba(255, 71, 200, 0.8), rgba(0, 0, 0, 0.7)), rgba(255, 71, 200, 0.8) !important;
+}
+
+/*************************/
+/*** HERO SECTION ***/
+/*************************/
+.section-hero {
+  background-color: var(--LIGHT-BLUE);
+  padding: 20rem 0 5rem 0;
+  z-index: 100;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+}
+.section-hero .hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 130rem;
+  margin: 0 auto !important;
+  gap: 9.6rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3.2rem;
+}
+.section-hero .hero .hero-interaction-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  perspective: 100rem;
+}
+.section-hero .hero .hero-interaction-box .box-container {
+  max-width: 100rem;
+  height: 25rem;
+  background-color: var(--BLUE);
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)) var(--BLUE);
+  transform-style: preserve-3d;
+  transform: rotateX(15deg) rotateY(-15deg) rotateZ(4deg);
+  box-shadow: 2rem 2rem 3rem 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: all ease 0.3s;
+}
+.section-hero .hero .hero-interaction-box .box-container:hover {
+  transform: translate(-1%, -1%) rotateX(15deg) rotateY(-15deg) rotateZ(4deg);
+  box-shadow: 3rem 3rem 3.2rem 0 rgba(0, 0, 0, 0.22);
+}
+.section-hero .hero .hero-interaction-box .box-container .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2rem;
+  background-color: var(--PURE-WHITE);
+  padding: 1rem 2rem;
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.3);
+}
+.section-hero .hero .hero-interaction-box .box-container .navbar .brand {
+  font-weight: 700;
+}
+.section-hero .hero .hero-interaction-box .box-container .navbar .box-list {
+  display: flex;
+  gap: 1.4rem;
+}
+.section-hero .hero .hero-interaction-box .box-container .navbar .box-list .box-list-item {
+  transition: all ease 0.3s;
+  height: 100%;
+  font-weight: 600;
+}
+.section-hero .hero .hero-interaction-box .box-container .navbar .box-list .box-list-item:hover {
+  cursor: pointer;
+  color: var(--DARKER-BLUE);
+}
+.section-hero .hero .hero-interaction-box .box-container .inner-container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 1rem 2rem;
+}
+.section-hero .hero .hero-interaction-box .box-container .inner-container .no-border {
+  display: flex;
+  border: none !important;
+  align-items: flex-start !important;
+}
+.section-hero .hero .hero-interaction-box .box-container .inner-container .frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -0.9rem;
+  width: 20rem;
+  height: 18rem;
+  border: 0.3rem solid rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  font-size: 10rem;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s;
+}
+.section-hero .hero .hero-interaction-box .box-container .inner-container .frame:hover {
+  color: rgb(255, 255, 255);
+  border: 0.3rem solid rgb(255, 255, 255);
+}
+.section-hero .hero .hero-interaction-box .box-container .inner-container .frame h1 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.section-hero .hero .hero-interaction-box .box-container .inner-container .frame p {
+  font-size: 1.2rem;
+}
+.section-hero .hero .hero-interaction-box .box-container .inner-container .frame ul {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-size: 1.2rem;
+  list-style: disc;
+  line-height: 1.25;
+}
+.section-hero .hero .hero-interaction-box .box-container .inner-container .frame ul li {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  height: 100%;
+  cursor: pointer;
+  margin-top: -0.6rem;
+}
+.section-hero .hero .hero-interaction-box .box-container .inner-container .frame ul li span {
+  font-size: 2rem;
+  color: rgb(47, 158, 68);
+}
+.section-hero .hero .hero-interaction-box .box-container .inner-container .frame ul .line-xlg {
+  border-radius: 1rem;
+  width: 15rem;
+  height: 0.8rem;
+  background: linear-gradient(to left, rgb(255, 255, 255), rgba(0, 0, 0, 0.28)), rgba(255, 255, 255, 0.8);
+}
+.section-hero .hero .hero-interaction-box .box-container .inner-container .frame .description-lines {
+  display: flex;
+  align-items: left;
+  gap: 1rem;
+  padding: 1rem;
+}
+.section-hero .hero .hero-interaction-box .box-container .inner-container .frame .description-lines:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 1rem;
+}
+.section-hero .hero .hero-interaction-box .box-container .inner-container .frame .description-lines .line-sm {
+  width: 1rem;
+  height: 0.4rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+.section-hero .hero .hero-interaction-box .box-container .inner-container .frame .description-lines .line-md {
+  width: 2rem;
+  height: 0.4rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+.section-hero .hero .hero-interaction-box .box-container .inner-container .frame .description-lines .line-lg {
+  width: 6rem;
+  height: 0.4rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+.section-hero .hero .hero-text-box .hero-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.05;
+  margin-bottom: 2.8rem;
+}
+.section-hero .hero .hero-text-box .hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+.section-hero .hero .hero-text-box .hero-btns {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 4.8rem;
+}
+.section-hero .hero .hero-text-box .hero-btns .hero-btn {
+  padding: 1.2rem 3.2rem;
+  border: none;
+  border-radius: 0.9rem;
+  background-color: var(--BLUE);
+  margin-bottom: 5.6rem;
+  transition: all ease 0.3s;
+}
+.section-hero .hero .hero-text-box .hero-btns .hero-btn a {
+  color: #fff;
+  font-size: 2rem;
+}
+.section-hero .hero .hero-text-box .hero-btns .hero-btn:hover {
+  background-color: var(--DARKER-BLUE);
+  cursor: pointer;
+}
+.section-hero .hero .hero-text-box .hero-btns .cta {
+  background-color: var(--PURE-WHITE);
+}
+.section-hero .hero .hero-text-box .hero-btns .cta a {
+  color: var(--DARK-GREY);
+}
+.section-hero .hero .hero-text-box .hero-btns .cta:hover {
+  background-color: transparent;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0.4rem rgba(255, 255, 255, 0.8);
+}
+.section-hero .hero .hero-text-box .technologies {
+  display: flex;
+  width: 100%;
+  padding-bottom: 10rem;
+}
+.section-hero .hero .hero-text-box .technologies .technology {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.2rem;
+  width: 5.6rem;
+  height: 5.6rem;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 200, 0.165)) var(--PURE-WHITE);
+  border-radius: 50%;
+  border: 0.2rem solid var(--LIGHT-BLUE);
+  margin-left: -1.2rem;
+}
+.section-hero .hero .hero-text-box .technologies .js {
+  color: gold;
+}
+.section-hero .hero .hero-text-box .technologies .nodejs {
+  color: green;
+}
+.section-hero .hero .hero-text-box .technologies .html5 {
+  color: chocolate;
+}
+.section-hero .hero .hero-text-box .technologies .css3 {
+  color: royalblue;
+}
+.section-hero .hero .hero-text-box .technologies .react {
+  color: aqua;
+}
+.section-hero .hero .hero-text-box .technologies .sass {
+  color: #c69;
+}
+.section-hero .hero .hero-text-box .technologies .docker {
+  color: #2591e6;
+}
+.section-hero .hero .hero-img-box {
+  justify-content: center;
+}
+.section-hero .hero .hero-img-box .hero-img {
+  width: 100%;
+}/*# sourceMappingURL=hero.css.map */

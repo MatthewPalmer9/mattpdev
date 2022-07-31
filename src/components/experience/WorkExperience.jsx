@@ -1,7 +1,3 @@
-import React from 'react';
-import ibmLogo from './ibm-logo.png';
-import memberstackLogo from './memberstack-logo.svg';
-
 export default function WorkExperience() {
     return (
         <section className="section-experience" id="experience">
@@ -18,6 +14,11 @@ export default function WorkExperience() {
                     </div>
                     {/* EXPERIENCE IBM */}
                     <div className="experience-text">
+                    <div className="tracker-container">
+                        <div className="track">
+
+                        </div>
+                    </div>
                         <h3 className="heading-tertiary track--dot">IBM (May 2021 &mdash; Present)</h3>
                         <p className="heading-description">
                             I started my journey with IBM as an <strong>Application Developer Apprentice</strong> where we were placed 
@@ -27,7 +28,7 @@ export default function WorkExperience() {
                         </p>
                     </div>
                     <div className="experience-img-box">
-                        <img className="experience-img" src={ibmLogo} alt="IBM logo" />
+                        <img className="experience-img" src={"/img/ibm-logo.png"} alt="IBM logo" />
                     </div>
 
                     {/* EXPERINCE MEMBERSTACK */}
@@ -42,7 +43,7 @@ export default function WorkExperience() {
                         </p>
                     </div>
                     <div className="experience-img-box">
-                        <img src={memberstackLogo} alt="Memberstack logo" className="experience-img" />
+                        <img src={"/img/memberstack-logo.svg"} alt="Memberstack logo" className="experience-img" />
                     </div>
                 </div>
             </div>

@@ -1,0 +1,39 @@
+/*********************/
+/* SECTION PROJECTS */
+/*******************/
+.section-projects .project-link {
+  text-decoration: none;
+  color: var(--GREY);
+}
+.section-projects .project-card {
+  margin-top: 4.4rem;
+  perspective: 100rem;
+  padding: 1.6rem 3.2rem;
+  box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+.section-projects .project-card .project-img {
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: rotateX(15deg) rotateY(-15deg) rotateZ(4deg);
+  box-shadow: 2rem 1.5rem 3rem 0 rgba(0, 0, 0, 0.15);
+  margin-bottom: 3.6rem;
+  transition: all 0.3s;
+  border-radius: 0.5rem;
+}
+.section-projects .project-card .project-img:hover {
+  transform: translate(-1%, -1%) rotateX(15deg) rotateY(-15deg) rotateZ(4deg);
+  box-shadow: 3rem 2rem 3rem 0 rgba(0, 0, 0, 0.1);
+}
+.section-projects .project-card .project-info .project-type {
+  font-size: 1.1rem;
+  color: var(--BLUE);
+}
+.section-projects .project-card .project-info .project-title {
+  font-size: 3.2rem;
+  margin-bottom: 1.2rem;
+}
+.section-projects .project-card .project-info .project-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}/*# sourceMappingURL=projects.css.map */

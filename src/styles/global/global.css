@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --DARK-GREY: #212529;
+  --LIGHT-GREY: #495057;
+  --GREY: #343a40;
+  --TINTED-WHITE-GREY: #868e96;
+  --WHITE-GREY: #adb5bd;
+  --PURE-WHITE: #fff;
+  --LIGHT-BLUE: #e7f5ff;
+  --LIGHTER-BLUE: #339af0;
+  --BLUE: #228be6;
+  --DARKER-BLUE: #1c7ed6;
+}
+
+html {
+  color: var(--GREY);
+  font-size: 62.5%;
+  position: relative;
+}
+
+body {
+  background-color: var(--PURE-WHITE);
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+}
+
+.wrap {
+  position: fixed;
+  bottom: 50%;
+  right: 0;
+  transform: translateY(50%);
+  filter: drop-shadow(-0.03rem 0rem 0rem rgb(116, 151, 219));
+  z-index: 100;
+}
+.wrap .shadow {
+  background-color: rgba(255, 255, 255, 0.95);
+  background: linear-gradient(to left top, rgba(50, 100, 200, 0.1), rgb(255, 255, 255));
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0;
+  width: 100%;
+  height: 100%;
+  padding: 3rem 1.5rem;
+  font-size: 3.2rem;
+  z-index: 200;
+}
+.wrap .shadow .social-link:link, .wrap .shadow .social-link:visited {
+  padding: 0.8rem 0;
+}
+.wrap .shadow .linkedin {
+  color: rgb(8, 102, 194);
+}
+.wrap .shadow .twitter {
+  color: #1DA1F2;
+}
+.wrap .shadow .github {
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.heading-tertiary {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.external-link {
+  font-weight: 600;
+  color: var(--BLUE);
+  border-bottom: 0.2rem dotted var(--BLUE);
+}
+
+.grid {
+  display: grid;
+  gap: 6.4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-two-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.row-gap {
+  row-gap: 15rem;
+}
+
+.center-v {
+  align-items: center;
+}
+
+.mg-top {
+  margin-top: 5.2rem;
+}
+
+.label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--BLUE);
+  margin-bottom: 1.6rem;
+  margin-top: 3.2rem;
+  letter-spacing: 0.75px;
+}/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,104 @@
+.heading-secondary {
+  font-size: 4.8rem;
+}
+
+.heading-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 10rem 0 15rem 0;
+}
+
+
+/*************************/
+/*** MAIN HEADER ***/
+/*************************/
+
+.sticky {
+  box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.05) !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4.8rem;
+  height: 9.6rem;
+  background-color: var(--LIGHT-BLUE);
+  z-index: 200;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 20px 30px rgba(231, 245, 255, 0.05);
+  transition: all 0.3s;
+
+  .brand {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      font-weight: 600;
+      font-size: 2.8rem;
+      gap: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+      
+      a {
+          color: var(--DARK-GREY);
+      }
+
+      .brand-p {
+          color: var(--BLUE);
+          font-size: 3.2rem;
+      }
+  }
+
+  .main-nav {
+      
+      .main-nav-list {
+          display: flex;
+          align-items: center;
+          gap: 4.8rem;
+          
+          li {
+              font-size: 2rem;
+              font-weight: 500;
+              
+              .main-nav-link {
+                  color: var(--GREY);
+                  transition: all ease 0.3s;
+
+                  &:hover {
+                      color: var(--BLUE);
+                  }
+              }
+
+              .nav-cta {
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                  background-color: var(--BLUE);
+                  color: var(--PURE-WHITE);
+                  padding: 0.8rem 1.8rem;
+                  border-radius: 9px;
+
+                  &:hover {
+                      background-color: var(--LIGHTER-BLUE);
+                      color: var(--PURE-WHITE);
+                  }
+
+                  .icon {
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      font-size: 1.8rem;
+                  }
+              }
+          }
+      }
+  }
+}
