@@ -1,5 +1,6 @@
 import React, { useLayoutEffect } from 'react';
 import About from './components/about/About.jsx';
+import Contact from './components/contact/Contact.jsx';
 import WorkExperience from './components/experience/WorkExperience.jsx';
 import Header from './components/header/Header.jsx';
 import Main from './components/main/Main.jsx';
@@ -84,6 +85,7 @@ function App() {
       <WorkExperience />
       <Projects />
       <Testimonials />
+      <Contact />
     </>
   );
 }

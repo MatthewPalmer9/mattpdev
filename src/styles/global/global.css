@@ -13,7 +13,9 @@
   --WHITE-GREY: #adb5bd;
   --PURE-WHITE: #fff;
   --LIGHT-BLUE: #e7f5ff;
+  --LIGHT-BLUE-TRANS: rgba(231, 245, 255, 0.8);
   --LIGHTER-BLUE: #339af0;
+  --LIGHTER-BLUE-TRANS: rgba(51, 154, 240, 0.8);
   --BLUE: #228be6;
   --DARKER-BLUE: #1c7ed6;
   --SOCIAL-LINK: #0b66c2;
@@ -31,6 +33,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
+  border-bottom: 1rem solid var(--BLUE);
+}
+
+.heading-secondary {
+  font-size: 4.8rem;
+}
+
+.heading-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.center {
+  text-align: center;
 }
 
 .wrap {
@@ -98,6 +114,12 @@ ul {
   justify-content: center;
 }
 
+.grid-top {
+  display: grid;
+  gap: 6.4rem;
+  justify-content: center;
+}
+
 .grid-two-cols {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -125,4 +147,22 @@ ul {
   margin-bottom: 1.6rem;
   margin-top: 3.2rem;
   letter-spacing: 0.75px;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 10rem 0 15rem 0;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--PURE-WHITE);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--BLUE);
 }/*# sourceMappingURL=global.css.map */

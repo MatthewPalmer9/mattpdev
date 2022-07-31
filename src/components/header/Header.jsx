@@ -20,7 +20,7 @@ export default function Header() {
                         <a className="main-nav-link" href="#testimonials">Testimonials</a>
                     </li>
                     <li>
-                        <a className="main-nav-link" href="/">Contact</a>
+                        <a className="main-nav-link" href="#contact">Contact</a>
                     </li>
                     <li>
                         <a target="_blank" rel="noreferrer" className="main-nav-link nav-cta" href="https://docs.google.com/document/d/1-4BHZ96uD8QJ2SkTX21MXHgcdytroYjalObEu8Azp_o">

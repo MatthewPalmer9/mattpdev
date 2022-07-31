@@ -9,7 +9,7 @@ export default function Testimonials() {
             What have people said about me?
         </h2>
 
-        <div className="grid grid-two-cols">
+        <div className="grid-top grid-two-cols">
           <TestimonialCard 
             pictureSrc={"/img/atarri.jfif"}
             name={"Atarri Hall"}
