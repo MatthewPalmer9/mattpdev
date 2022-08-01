@@ -169,8 +169,7 @@ export default function Contact() {
       && contactForm.firstName !== null
       && contactForm.message !== null
       ) {
-        console.log("Sending...")
-      // sendEmail();
+      sendEmail();
     }
   }, [errors, contactForm, formSubmitted]);
 
