@@ -105,6 +105,7 @@ export default function Contact() {
 
     if((contactForm.firstName !== null && contactForm.firstName !== '')
       && (contactForm.email !== null && contactForm.email !== '')
+      && (emailRegex.test(contactForm.email))
       && (contactForm.message !== null && contactForm.message !== '')) {
         setFormSubmitted(prevState => ({
           ...prevState,
@@ -168,7 +169,8 @@ export default function Contact() {
       && contactForm.firstName !== null
       && contactForm.message !== null
       ) {
-      sendEmail();
+        console.log("Sending...")
+      // sendEmail();
     }
   }, [errors, contactForm, formSubmitted]);
 
