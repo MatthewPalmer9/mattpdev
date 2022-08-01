@@ -11,7 +11,7 @@ export default function Projects() {
                         link={"https://quirky-jennings-58c09b.netlify.app/"}
                         imgSrc={"/img/website-thumbnail.PNG"}
                         title={"MattPDev"}
-                        description={"Let's start here! This portfolio, and all of my projects here, are not built with some easy framework like Bootstrap. This website is designed from scratch!"}
+                        description={"Let's start here! This portfolio, and all of my projects here, are not built with Bootstrap. This website is designed from scratch to reinforce foundational knowledge!"}
                     />
                     <ProjectCard 
                         link={"https://quirky-jennings-58c09b.netlify.app/"}
