@@ -127,9 +127,6 @@ export default function Contact() {
           ...prevState,
           sent: true
         }));
-
-        console.log("Successfully sent!");
-        console.log(contactForm);
       };
     };
 
@@ -143,8 +140,6 @@ export default function Contact() {
       sendEmail();
     }
   }, [errors, contactForm, formSubmitted]);
-
-  console.log(emailSent)
 
   return (
     <section id="contact" className="contact">
