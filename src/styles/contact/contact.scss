@@ -131,5 +131,24 @@
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
       }
     }
+    
+    .submitted-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20rem;
+      height: 100%;
+      border: none;
+      border-radius: 1rem;
+      gap: 0.5rem;
+      background-color: var(--BLUE);
+      color: var(--PURE-WHITE);
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 2rem;
+      box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: all 0.1s;
+    }
   }
 }

@@ -1,9 +1,12 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 
 export default function Contact() {
   // Track Form Click
   const [formSubmitted, setFormSubmitted] = useState({submitted: false});
+
+  // Track Email Sent
+  const [emailSent, setEmailSent] = useState({sent: false});
   
   // Form State
   const [contactForm, setContactForm] = useState({
@@ -49,7 +52,7 @@ export default function Contact() {
     }
 
     // Email
-    let emailRegex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
+    let emailRegex = new RegExp('[a-z0-9]+@[a-z]+.[a-z]{2,3}');
     if(contactForm.email === null) {
       setErrors(prevState => ({
         ...prevState,
@@ -70,6 +73,7 @@ export default function Contact() {
       }));
     };
 
+    // If no validation errors, set formSubmitted = true
     if(Object.keys(errors) > 0) {
       return;
     } else {
@@ -83,20 +87,53 @@ export default function Contact() {
 
   useEffect(() => {
     // Handle Send Email
-    const sendEmail = () => {
+    const sendEmail = async () => {
       emailjs.init("user_PhaHB3scWG4p7Nv7oXhNL");
-      emailjs.send(
+      const resp = await emailjs.send(
         'outlook',
         'template_hbRIh0S4',
         contactForm
       )
-      .then(resp => {
-        if(resp.status === 200) {
-          console.log("Successfully sent!")
-        }
-      })
-    }
-    // If no errors or validation issues, go ahead and send message!
+      
+      // On Success, Reset Form
+      if(resp.status === 200) {
+        const name = document.getElementById('name');
+        const email = document.getElementById('email');
+        const message = document.getElementById('message');
+        const inputFields = document.querySelectorAll('input-field');
+
+        // Form Reset
+        setContactForm(prevState => ({
+          ...prevState,
+          firstName: null, email: null, message: null
+        }));
+        name.value = "";
+        email.value ="";
+        message.value ="";
+
+        // Form Submitted Reset
+        setFormSubmitted(prevState => ({
+          ...prevState,
+          submitted: false
+        }));
+
+        // Hide Input Fields From DOM
+        inputFields.forEach(input => {
+          input.style.display = "none";
+        });
+
+        // Email Sent Flag
+        setEmailSent(prevState => ({
+          ...prevState,
+          sent: true
+        }));
+
+        console.log("Successfully sent!");
+        console.log(contactForm);
+      };
+    };
+
+    // If no errors or validation issues, go ahead and send email!
     if(
       formSubmitted.submitted
       && contactForm.email !== null
@@ -106,6 +143,8 @@ export default function Contact() {
       sendEmail();
     }
   }, [errors, contactForm, formSubmitted]);
+
+  console.log(emailSent)
 
   return (
     <section id="contact" className="contact">
@@ -118,47 +157,63 @@ export default function Contact() {
         
         <form className="contact-form">
           <h3 className="contact-heading">Contact Me</h3>
-          <div className="input-field">
-              <input
-                  onChange={handleChange}
-                  name="firstName"
-                  type="text"
-                  placeholder="Name"
-                  required
-              />
-              <label htmlFor="name">Name:</label>
-              <span className={errors.name ? "error" : ""}>{errors.name}</span>
-          </div>
+          {emailSent.sent ? (
+            <h2>Successfully sent! Check your inbox for confirmation! 🎉</h2>
+          ) : (
+            <>
+              <div className="input-field">
+                <input
+                    id="name"
+                    onChange={handleChange}
+                    name="firstName"
+                    type="text"
+                    placeholder="Name"
+                    required
+                />
+                <label htmlFor="name">Name:</label>
+                <span className={errors.name ? "error" : ""}>{errors.name}</span>
+              </div>
 
-          <div className="input-field">
-              <input
-                  onChange={handleChange}
-                  name="email"
-                  type="email"
-                  placeholder="Email"
-                  required
-              />
-              <label htmlFor="email">Email:</label>
-              <span className={errors.email ? "error": ""}>{errors.email}</span>
-          </div>
+              <div className="input-field">
+                <input
+                    id="email"
+                    onChange={handleChange}
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    required
+                />
+                <label htmlFor="email">Email:</label>
+                <span className={errors.email ? "error": ""}>{errors.email}</span>
+              </div>
 
-          <div className="input-field">
-            <textarea
-              onChange={handleChange}
-              className="text-field" 
-              name="message"
-              placeholder="Type your message here..."
-              required
-            />
-            <span className={errors.message ? "error" : ""}>{errors.message}</span>
-          </div>
+              <div className="input-field">
+                <textarea
+                id="message"
+                  onChange={handleChange}
+                  className="text-field" 
+                  name="message"
+                  placeholder="Type your message here..."
+                  required
+                />
+                <span className={errors.message ? "error" : ""}>{errors.message}</span>
+              </div>
+            </>
+          )}
+          
 
 
           <div className="form-submit-box">
-              <button onClick={handleSubmit} className="submit-button">
+            {!emailSent.sent ? (
+              <button id="send-button" onClick={handleSubmit} className="submit-button">
                 Send 
                 <ion-icon name="paper-plane-outline"></ion-icon>
               </button>
+            ) : (
+              <button id="send-button" onClick={handleSubmit} className="submitted-button" disabled>
+                Sent!
+              </button>
+            )}
           </div>
         </form>
       </div>
