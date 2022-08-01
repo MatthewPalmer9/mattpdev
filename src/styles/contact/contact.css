@@ -18,7 +18,22 @@
   color: var(--PURE-WHITE);
 }
 .contact-form .input-field {
+  display: flex;
+  flex-direction: column;
   position: relative;
+}
+.contact-form .input-field .error {
+  display: flex;
+  align-items: center;
+  margin-top: -0.5rem;
+  height: 3.2rem;
+  background-color: rgba(178, 34, 34, 0.5);
+  padding: 0.5rem 2rem;
+  border: 0.1rem solid firebrick;
+  color: var(--PURE-WHITE);
+  font-weight: 500;
+  font-size: 1.6rem;
+  transition: all 0.1s;
 }
 .contact-form label {
   display: flex;
@@ -82,6 +97,7 @@
   transition: all 0.5s;
   padding: 1rem;
   font-weight: 500;
+  margin-bottom: 1rem;
 }
 .contact-form .text-field:focus {
   border-color: var(--DARKER-BLUE);

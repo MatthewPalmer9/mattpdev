@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function TestimonialCard(props) {
   const {pictureSrc, name, socialLink, title, quote} = props;
   

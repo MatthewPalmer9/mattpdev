@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function ProjectCard({imgSrc, link, title, description}) {
   return (
     <a className="project-link" target="_blank" rel="noreferrer" href={link}>
