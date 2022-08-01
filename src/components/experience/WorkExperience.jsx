@@ -21,7 +21,7 @@ export default function WorkExperience() {
                     </div>
                         <h3 className="heading-tertiary track--dot">IBM (May 2021 &mdash; Present)</h3>
                         <p className="heading-description">
-                            As an <strong>Application Developer</strong> at IBM, my responsibilities include mentoring, and developing code and documentation for<em>The State of Florida, DCF.</em> Primary technologies used for this role are Java (Struts 2), JavaScript, and SQL (DB2).
+                            As an <strong>Application Developer</strong> at IBM, my responsibilities include mentoring, and developing code and documentation for <em>The State of Florida, DCF.</em> Primary technologies used for this role are Java (Struts 2), JavaScript, and SQL (DB2).
                         </p>
                     </div>
                     <div className="experience-img-box">
