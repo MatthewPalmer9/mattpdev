@@ -20,6 +20,30 @@ export default function Contact() {
 
   // Handle Form Changes
   const handleChange = (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+    switch(e.target.name) {
+      case "firstName":
+        setContactForm(prevState => ({
+          ...prevState,
+          [e.target.name]: e.target.value.split(" ")[0]
+        }));
+        break;
+      case "email":
+        setContactForm(prevState => ({
+          ...prevState,
+          [e.target.name]: e.target.value
+        }));
+        break;
+      case "message":
+        setContactForm(prevState => ({
+          ...prevState,
+          [e.target.name]: e.target.value.replaceAll("\n", "")
+        }));
+        break
+      default:
+        break;
+    }
     if(e.target.name !== "firstName") {
       setContactForm(prevState => ({
         ...prevState,
@@ -36,6 +60,12 @@ export default function Contact() {
   // Handle Form Submit
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Default Form State Submitted False
+    setFormSubmitted(prevState => ({
+      ...prevState,
+      submitted: false
+    }));
     
     // Reset Errors State
     setErrors(prevErrors => ({
@@ -44,7 +74,7 @@ export default function Contact() {
     }));
 
     // Name
-    if(contactForm.firstName === null) {
+    if(contactForm.firstName === null || contactForm.firstName === '') {
       setErrors(prevState => ({
         ...prevState,
         name: "Please include your name."
@@ -53,7 +83,7 @@ export default function Contact() {
 
     // Email
     let emailRegex = new RegExp('[a-z0-9]+@[a-z]+.[a-z]{2,3}');
-    if(contactForm.email === null) {
+    if(contactForm.email === null || contactForm.email === '') {
       setErrors(prevState => ({
         ...prevState,
         email: "Please include your email."
@@ -66,23 +96,24 @@ export default function Contact() {
     };
 
     // Message
-    if(contactForm.message === null) {
+    if(contactForm.message === null || contactForm.message === '') {
       setErrors(prevState => ({
         ...prevState,
         message: "Please include your message."
       }));
     };
 
-    // If no validation errors, set formSubmitted = true
-    if(Object.keys(errors) > 0) {
-      return;
-    } else {
-      setFormSubmitted(prevState => ({
-        ...prevState,
-        submitted: true
-      }));
+    if((contactForm.firstName !== null && contactForm.firstName !== '')
+      && (contactForm.email !== null && contactForm.email !== '')
+      && (contactForm.message !== null && contactForm.message !== '')) {
+        setFormSubmitted(prevState => ({
+          ...prevState,
+          submitted: true
+        }));
     }
   };
+
+
 
 
   useEffect(() => {
@@ -189,6 +220,7 @@ export default function Contact() {
                   className="text-field" 
                   name="message"
                   placeholder="Type your message here..."
+                  aria-multiline={true}
                   required
                 />
                 <span className={errors.message ? "error" : ""}>{errors.message}</span>
