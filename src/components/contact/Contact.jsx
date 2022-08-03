@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 
 export default function Contact() {
-  // Track Form Click
+  // Track Form Submitted Flag
   const [formSubmitted, setFormSubmitted] = useState({submitted: false});
 
-  // Track Email Sent
+  // Track Email Sent Flag
   const [emailSent, setEmailSent] = useState({sent: false});
   
   // Form State
@@ -20,13 +20,15 @@ export default function Contact() {
 
   // Handle Form Changes
   const handleChange = (e) => {
-    e.preventDefault()
-    e.stopPropagation()
+    e.preventDefault();
+    e.stopPropagation(); // This is included to prevent an error caused by input Browser Extensions such as "LastPass"
+    
+    // Handles state for each input field within the Contact Form
     switch(e.target.name) {
       case "firstName":
         setContactForm(prevState => ({
           ...prevState,
-          [e.target.name]: e.target.value.split(" ")[0]
+          [e.target.name]: e.target.value.split(" ")[0] // Only capture first name
         }));
         break;
       case "email":
@@ -38,22 +40,11 @@ export default function Contact() {
       case "message":
         setContactForm(prevState => ({
           ...prevState,
-          [e.target.name]: e.target.value.replaceAll("\n", "")
+          [e.target.name]: e.target.value.replaceAll("\n", "") // Remove line breaks in textarea
         }));
         break
       default:
         break;
-    }
-    if(e.target.name !== "firstName") {
-      setContactForm(prevState => ({
-        ...prevState,
-        [e.target.name]: e.target.value
-      }));
-    } else {
-      setContactForm(prevState => ({
-        ...prevState,
-        [e.target.name]: e.target.value.split(" ")[0]
-      }));
     }
   };
 
